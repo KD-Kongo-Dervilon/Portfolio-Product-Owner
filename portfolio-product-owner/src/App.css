@@ -15,6 +15,7 @@
 --text-color: hsl(var(--hue), var(--sat), 46%);
 --body-color: hsl(var(--hue), var(--sat), 98%);
 --container-color: #fff;
+--link-blue: hsl(294, 96%, 40%);
 
 /*========== Font and typography ==========*/
 --body-font: "Poppins", sans-serif;
@@ -176,15 +177,6 @@ align-items: center;
 .container {
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
-  }
-
-.button {
-  padding: 1rem 1.75rem;
-  } 
-
-.button__icon {
-  width: 22px;
-  height: 22px;
     }
   }
 
