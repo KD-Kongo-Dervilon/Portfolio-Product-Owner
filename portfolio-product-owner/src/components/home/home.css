@@ -16,7 +16,7 @@
 }
 
 .home_social-icon {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: var(--title-color);
     transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
@@ -26,7 +26,7 @@
 }
 
 .home_social-icon:hover {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: var(--link-blue);
 }
 
@@ -184,6 +184,10 @@
         .home_scroll {
             margin-left:7.5rem;
         }
+
+        .home_social-icon {
+            font-size: 2rem;
+        }
     }
 
     
@@ -215,11 +219,27 @@
         .home_scroll {
             display: none;
         }
-    }
-    
-    @media screen and (max-width: 576px) {
+
+        .button-home {
+            padding: 1rem;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            border: none;
+            box-shadow: 0 9px #999;
+        }
+        
+        .home_social-icon:hover {
+            font-size: 3rem;
+        }
     }
     
     /* For small devices */
     @media screen and (max-width: 350px) {
+        .home_img {
+            width: 180px;
+            height: 180px;
+        }
     }
