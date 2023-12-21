@@ -49,6 +49,14 @@
 .nav_logo {
     font-size: 1.5rem;
     filter: drop-shadow(1rem 0.75rem 0.75rem rgba(251, 251, 251, 0.642));
+    transition: all 0.5s ease-out;
+    color: #000;
+}
+
+.nav_logo:hover {
+    filter: drop-shadow(1rem 0.75rem 0.75rem rgba(110, 2, 106, 0.642));
+    font-size: 2.5rem;
+    color: var(--link-blue);
 }
 
 /* Active link  */

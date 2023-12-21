@@ -1,0 +1,110 @@
+.home_content {
+    grid-template-columns: 116px repeat(2,1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home_social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home_social-icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+
+.home_social-icon:hover {
+    font-size: 2.5rem;
+    color: var(--link-blue);
+}
+
+.home_title {
+    font-size: var(--middle-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.home_subtitle {
+    position:relative;
+    font-size: var(--h2-font-size);
+    text-align: center;
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+}
+
+.home_subtitle::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 0;
+    top: 1rem;
+}
+
+.home_subtitle::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    right: 0;
+    top: 1rem;
+}
+
+.home_description {
+    max-width: 400px;
+    margin-bottom: var(--mb-3);
+}
+
+.home_img {
+    background: url(../../assets/IMG_0513.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    order: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 25% 10%;
+}
+
+.button--flex {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button--flex:hover {
+    background-color: #000
+}
+
+.button--flex:active {
+    background-color: #000;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.hello {
+    margin-left: 0.5rem;
+    transition: all 0.5s ease-out;
+}
+
+.button--flex:hover .hello {
+    margin-left: 1rem;
+    fill: var(--link-blue);
+}
