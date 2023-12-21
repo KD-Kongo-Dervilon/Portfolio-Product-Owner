@@ -1,3 +1,7 @@
+.home_container {
+    row-gap: 5.5rem;
+}
+
 .home_content {
     grid-template-columns: 116px repeat(2,1fr);
     padding-top: 5.5rem;
@@ -77,7 +81,8 @@
     border-radius: 25% 10%;
 }
 
-.button--flex {
+
+.button-home {
     padding: 15px 25px;
     font-size: 24px;
     text-align: center;
@@ -89,12 +94,13 @@
     box-shadow: 0 9px #999;
 }
 
-.button--flex:hover {
-    background-color: #000
+.button-home:hover {
+    background-color: #fff;
+    color:#000;
 }
 
-.button--flex:active {
-    background-color: #000;
+.button-home:active {
+    background-color: #fff;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -104,7 +110,90 @@
     transition: all 0.5s ease-out;
 }
 
-.button--flex:hover .hello {
+.button-home:hover .hello {
     margin-left: 1rem;
     fill: var(--link-blue);
 }
+
+.home_scroll {
+    margin-left: 9.25rem;
+}
+
+.wheel {
+    animation: scroll 2s ease infinite;
+    -webkit-animation: scroll 2s ease infinite;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    30% {
+        transform: translateY(2.5rem);
+        -webkit-transform: translateY(2.5rem);
+        -moz-transform: translateY(2.5rem);
+        -ms-transform: translateY(2.5rem);
+        -o-transform: translateY(2.5rem);
+}
+}
+
+.home_scroll-mouse {
+    transition: 0.2s ease;
+    filter: drop-shadow(5px 5px 2px #ffffff);
+    -webkit-filter: drop-shadow(5px 5px 2px #ffffff);
+}
+
+.home_scroll-mouse:hover {
+    fill: var(--link-blue);
+}
+
+.home_scroll-name {
+    color: var(--title-color);
+    margin: 0rem 1.5rem;
+    font-size: 1.3em;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+        .home_content {
+            grid-template-columns: 100px repeat(2,1fr);
+            column-gap: 1.25rem;
+        }
+
+        .home_description {
+            max-width: initial;
+            margin-bottom: var(--mb-2-5);
+        }
+
+        .home_content {
+            padding-top: 1.5rem;
+        }
+
+        .home_img {
+            width: 250px;
+            height: 250px;
+            box-shadow: rgba(50, 50, 93, 0.55) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .home_scroll {
+            margin-left:7.5rem;
+        }
+    }
+    
+    /* For medium devices */
+    @media screen and (max-width: 768px) {
+
+    }
+    
+    @media screen and (max-width: 576px) {
+    }
+    
+    /* For small devices */
+    @media screen and (max-width: 350px) {
+    }
