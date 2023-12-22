@@ -1,0 +1,30 @@
+.services__container {
+    grid-template-columns: repeat(3, 270px);
+    justify-content: center;
+    column-gap: 1.8rem;
+}
+
+.services__content {
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background-color: var(--container-color);
+    padding: 6rem 0 2rem 0rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.services__icon {
+    display: block;
+    font-size:2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.services__modal {
+    display: none;
+}
