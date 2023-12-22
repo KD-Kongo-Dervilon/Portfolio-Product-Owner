@@ -34,7 +34,7 @@ const Frontend = () => {
 
                         <div>
                             <h3 className="skills__name">Tests et débogage</h3>
-                            <span className="skills__level"> Tests unitaires </span>
+                            <span className="skills__level"> Tests unitaires / Jest  </span>
                         </div>
                     </div>
 
