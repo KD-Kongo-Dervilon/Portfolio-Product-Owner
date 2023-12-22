@@ -15,17 +15,17 @@ const Header = () => {
                     <ul className="nav_list grid">
                         <li className="nav_item">
                             <a href="#home" className="nav_link active-link">
-                                <i className="uil uil-estate nav_icon"></i> Home
+                                <i className="uil uil-estate nav_icon"></i> Accueil
                             </a>
                         </li>
                         <li className="nav_item">
                             <a href="#about" className="nav_link"> 
-                                <i className="uil uil-user nav_icon"></i> About
+                                <i className="uil uil-user nav_icon"></i> À propos
                             </a>
                         </li>
                         <li className="nav_item">
                             <a href="#skills" className="nav_link">
-                                <i className="uil uil-file-alt nav_icon"></i> Skills
+                                <i className="uil uil-file-alt nav_icon"></i> Compétences
                             </a>
                         </li>
                         <li className="nav_item">
