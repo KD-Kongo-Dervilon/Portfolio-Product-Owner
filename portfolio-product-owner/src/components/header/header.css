@@ -102,11 +102,7 @@
     .show-menu {
         bottom: 0;
         transition: 0.2s ease;
-        -webkit-transition: 0.2s ease;
-        -moz-transition: 0.2s ease;
-        -ms-transition: 0.2s ease;
-        -o-transition: 0.2s ease;
-}
+    }
 
     .nav_list {
         display: grid;
@@ -129,7 +125,7 @@
     }
 
     .nav_close:hover {
-        color: var(--title-color-dark);
+        color: var(--link-blue);
     }
 
     .nav_toggle {
@@ -147,13 +143,6 @@
         display : flex;
     }
 
-    .nav_icon {
-        transition: all 0.5s ease-out;
-    }
-
-    .nav_icon:hover {
-        font-size: 2.8rem;
-    }
 }
 
 /* For small devices */
