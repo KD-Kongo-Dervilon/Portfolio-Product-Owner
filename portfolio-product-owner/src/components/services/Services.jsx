@@ -27,11 +27,10 @@ const Services = () => {
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"> </i>
                         <h3 className="services__modal-title"> Gestion de produit stratégique </h3>
                         <p className="services__modal-description">
-                            En un an d 'expérience en tant qu' étudiant en gestion de
-                            projet, j 'ai mené à bien la réalisation de 12 projets dans le
-                            cadre de ma formation en tant que Product Manager.Ces
-                            réalisations ont été accompagnées d 'avis positifs sur la
-                            qualité des livrables ainsi que sur la qualité de mon travail.
+                            En tant que product manager j'ai appris à façonner ma vision du produit en identifiant les besoins du marché et 
+                            en définissant une direction claire. Je crée une feuille de route détaillée basée sur 
+                            des retours clients, des analyses de marché et des compétences techniques, priorisant 
+                            les fonctionnalités pour maximiser leur valeur et l'impact global du produit.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
@@ -65,18 +64,17 @@ const Services = () => {
                     <h3 className="services__title"> Coordination et gestion de l'équipe </h3>
                 </div>
 
-                <span className="services__button"> En savoir + <i className="uil uil-arrow-right services__button-icon"> </i></span>
+                <span onClick={() => toggleTab(2)} className="services__button"> En savoir + <i className="uil uil-arrow-right services__button-icon"> </i></span>
 
-                <div className="services__modal">
+                <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
                     <div className="services__modal-content">
-                        <i className="uil uil-times services__modal-close"> </i>
+                        <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"> </i>
                         <h3 className="services__modal-title"> Coordination et gestion de l'équipe </h3>
                         <p className="services__modal-description">
-                            En un an d 'expérience en tant qu'étudiant en gestion de
-                            projet, j 'ai mené à bien la réalisation de 12 projets dans le
-                            cadre de ma formation en tant que Product Manager.Ces
-                            réalisations ont été accompagnées d 'avis positifs sur la
-                            qualité des livrables ainsi que sur la qualité de mon travail.{" "}
+                            En tant que responsable du produit, je dirige l'équipe vers les objectifs du produit
+                            en communiquant clairement et en inspirant. Je gère les relations avec les parties prenantes 
+                            internes et externes pour aligner les attentes et faciliter le développement du produit. 
+                            En outre, je résout les problèmes et facilite le flux de travail pour assurer une progression fluide.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
@@ -110,18 +108,17 @@ const Services = () => {
                     <h3 className="services__title"> Analyse et itérations basées sur les données </h3>
                 </div>
 
-                <span className="services__button"> En savoir + <i className="uil uil-arrow-right services__button-icon"> </i></span>
+                <span onClick={() => toggleTab(3)} className="services__button"> En savoir + <i className="uil uil-arrow-right services__button-icon"> </i></span>
 
-                <div className="services__modal">
+                <div className={toggleState === 3 ? "services__modal active-modal" :  "services__modal"}>
                     <div className="services__modal-content">
-                        <i className="uil uil-times services__modal-close"> </i>
+                        <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"> </i>
                         <h3 className="services__modal-title"> Analyse et itérations basées sur les données </h3>
                         <p className="services__modal-description">
-                            En un an d 'expérience en tant qu'étudiant en gestion de
-                            projet, j 'ai mené à bien la réalisation de 12 projets dans le
-                            cadre de ma formation en tant que Product Manager.Ces
-                            réalisations ont été accompagnées d 'avis positifs sur la
-                            qualité des livrables ainsi que sur la qualité de mon travail.{" "}
+                            En tant que responsable de produit , 
+                            je collecte et analyse des données variées pour comprendre le comportement des utilisateurs 
+                            et orienter les décisions. j' utilise ces insights pour guider des ajustements et des améliorations itératives, 
+                            assurant ainsi l'évolution du produit en réponse aux besoins changeants des utilisateurs et du marché.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
