@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./services.css";
 
 const Services = () => {
+    const [toggleState, setToggleState] = useState(0)
+
     return (
     <section className="services section" id="services">
         <h2 className="section__title"> Services </h2>
@@ -21,7 +23,7 @@ const Services = () => {
                         <i className="uil uil-times services__modal-close"> </i>
                         <h3 className="services__modal-title"> Gestion de produit stratégique </h3>
                         <p className="services__modal-description">
-                            En un an d 'expérience en tant que étudiant en gestion de
+                            En un an d 'expérience en tant qu' étudiant en gestion de
                             projet, j 'ai mené à bien la réalisation de 12 projets dans le
                             cadre de ma formation en tant que Product Manager.Ces
                             réalisations ont été accompagnées d 'avis positifs sur la
@@ -66,7 +68,7 @@ const Services = () => {
                         <i className="uil uil-times services__modal-close"> </i>
                         <h3 className="services__modal-title"> Coordination et gestion de l'équipe </h3>
                         <p className="services__modal-description">
-                            En un an d 'expérience en tant que étudiant en gestion de
+                            En un an d 'expérience en tant qu'étudiant en gestion de
                             projet, j 'ai mené à bien la réalisation de 12 projets dans le
                             cadre de ma formation en tant que Product Manager.Ces
                             réalisations ont été accompagnées d 'avis positifs sur la
@@ -111,7 +113,7 @@ const Services = () => {
                         <i className="uil uil-times services__modal-close"> </i>
                         <h3 className="services__modal-title"> Analyse et itérations basées sur les données </h3>
                         <p className="services__modal-description">
-                            En un an d 'expérience en tant que étudiant en gestion de
+                            En un an d 'expérience en tant qu'étudiant en gestion de
                             projet, j 'ai mené à bien la réalisation de 12 projets dans le
                             cadre de ma formation en tant que Product Manager.Ces
                             réalisations ont été accompagnées d 'avis positifs sur la
@@ -129,13 +131,6 @@ const Services = () => {
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
                                     Prise de décisions basée sur les données
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"> </i>
-                                <p className="services__modal-info">
-                                    I develo the user interface
                                 </p>
                             </li>
 
