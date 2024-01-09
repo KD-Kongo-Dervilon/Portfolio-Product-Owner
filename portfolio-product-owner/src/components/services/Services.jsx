@@ -11,7 +11,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i class='bx bx-package services__icon'></i>
-                    <h3 className="services__title"> Gestion de Produit </h3>
+                    <h3 className="services__title"> Gestion de produit stratégique   </h3>
                 </div>
 
                 <span className="services__button"> En savoir + <i className="uil uil-arrow-right services__button-icon"> </i></span>
@@ -19,47 +19,33 @@ const Services = () => {
                 <div className="services__modal">
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close"> </i>
-                        <h3 className="services__modal-title"> </h3>
+                        <h3 className="services__modal-title"> Gestion de produit stratégique </h3>
                         <p className="services__modal-description">
                             En un an d 'expérience en tant que étudiant en gestion de
                             projet, j 'ai mené à bien la réalisation de 12 projets dans le
                             cadre de ma formation en tant que Product Manager.Ces
                             réalisations ont été accompagnées d 'avis positifs sur la
-                            qualité des livrables ainsi que sur la qualité de mon travail.{" "}
+                            qualité des livrables ainsi que sur la qualité de mon travail.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
+                                    Définition de la vision du produit 
                                 </p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
+                                    Élaboration de la feuille de route du produit
                                 </p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"> </i>
-                                <p className="services__modal-info">
-                                    I develo the user interface
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"> </i>
-                                <p className="services__modal-info">
-                                    I develo the user interface
+                                    Priorisation des fonctionnalités et des objectifs
                                 </p>
                             </li>
                         </ul>
@@ -70,7 +56,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-web-grid services__icon"> </i>
-                    <h3 className="services__title"> Web Designer </h3>
+                    <h3 className="services__title"> Coordination et gestion de l'équipe </h3>
                 </div>
 
                 <span className="services__button"> En savoir + <i className="uil uil-arrow-right services__button-icon"> </i></span>
@@ -78,7 +64,7 @@ const Services = () => {
                 <div className="services__modal">
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close"> </i>
-                        <h3 className="services__modal-title"> </h3>
+                        <h3 className="services__modal-title"> Coordination et gestion de l'équipe </h3>
                         <p className="services__modal-description">
                             En un an d 'expérience en tant que étudiant en gestion de
                             projet, j 'ai mené à bien la réalisation de 12 projets dans le
@@ -90,35 +76,21 @@ const Services = () => {
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
+                                    Leadership et communication 
                                 </p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
+                                    Gestion des parties prenantes 
                                 </p>
                             </li>
 
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"> </i>
-                                <p className="services__modal-info">
-                                    I develo the user interface
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"> </i>
-                                <p className="services__modal-info">
-                                    I develo the user interface
+                                    Facilitation et résolution de problèmes 
                                 </p>
                             </li>
                         </ul>
@@ -129,7 +101,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-arrow services__icon"> </i>
-                    <h3 className="services__title"> UI/UX Designer </h3>
+                    <h3 className="services__title"> Analyse et itérations basées sur les données </h3>
                 </div>
 
                 <span className="services__button"> En savoir + <i className="uil uil-arrow-right services__button-icon"> </i></span>
@@ -137,7 +109,7 @@ const Services = () => {
                 <div className="services__modal">
                     <div className="services__modal-content">
                         <i className="uil uil-times services__modal-close"> </i>
-                        <h3 className="services__modal-title"> </h3>
+                        <h3 className="services__modal-title"> Analyse et itérations basées sur les données </h3>
                         <p className="services__modal-description">
                             En un an d 'expérience en tant que étudiant en gestion de
                             projet, j 'ai mené à bien la réalisation de 12 projets dans le
@@ -149,7 +121,14 @@ const Services = () => {
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
+                                    Collecte et analyse des données 
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <i className="uil uil-check-circle services__modal-icon"> </i>
+                                <p className="services__modal-info">
+                                    Prise de décisions basée sur les données
                                 </p>
                             </li>
 
@@ -163,21 +142,7 @@ const Services = () => {
                             <li className="services__modal-service">
                                 <i className="uil uil-check-circle services__modal-icon"> </i>
                                 <p className="services__modal-info">
-                                    I develo the user interface
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"> </i>
-                                <p className="services__modal-info">
-                                    I develo the user interface
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <i className="uil uil-check-circle services__modal-icon"> </i>
-                                <p className="services__modal-info">
-                                    I develo the user interface
+                                    Itérations et améliorations continues
                                 </p>
                             </li>
                         </ul>
