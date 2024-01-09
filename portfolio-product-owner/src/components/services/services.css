@@ -69,11 +69,11 @@
     padding: 0.1rem;
     opacity: 0;
     visibility: hidden;
-    transition: .0.3s ease-out;
-    -webkit-transition: .0.3s ease-out;
-    -moz-transition: .0.3s ease-out;
-    -ms-transition: .0.3s ease-out;
-    -o-transition: .0.3s ease-out;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
 }
 
 .services__modal-content {
