@@ -16,8 +16,8 @@ const Services = () => {
         <div className="services__container container grid">
             <div className="services__content">
                 <div>
-                    <i class='bx bx-package services__icon'></i>
-                    <h3 className="services__title"> Gestion de produit stratégique   </h3>
+                    <i class='uil uil-chart services__icon'></i>
+                    <h3 className="services__title"> Gestion de produit </h3>
                 </div>
 
                 <span className="services__button" onClick={() => toggleTab(1)}> En savoir  <i className="uil uil-arrow-right services__button-icon"> </i></span>
@@ -61,7 +61,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-web-grid services__icon"> </i>
-                    <h3 className="services__title"> Coordination et gestion de l'équipe </h3>
+                    <h3 className="services__title"> Gestion de l'équipe </h3>
                 </div>
 
                 <span className="services__button" onClick={() => toggleTab(2)}> En savoir  <i className="uil uil-arrow-right services__button-icon"> </i></span>
@@ -105,7 +105,7 @@ const Services = () => {
             <div className="services__content">
                 <div>
                     <i className="uil uil-arrow services__icon"> </i>
-                    <h3 className="services__title"> Analyse et itérations basées sur les données </h3>
+                    <h3 className="services__title"> Analyse et itérations </h3>
                 </div>
                 
                 <span className="services__button" onClick={() => toggleTab(3)}> En savoir  <i className="uil uil-arrow-right services__button-icon"> </i></span>
@@ -113,7 +113,7 @@ const Services = () => {
                 <div className={toggleState === 3 ? "services__modal active-modal" :  "services__modal"}>
                     <div className="services__modal-content">
                         <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"> </i>
-                        <h3 className="services__modal-title"> Analyse et itérations basées sur les données </h3>
+                        <h3 className="services__modal-title"> Analyse et itérations  </h3>
                         <p className="services__modal-description">
                             En tant que responsable de produit , 
                             je collecte et analyse des données variées pour comprendre le comportement des utilisateurs 

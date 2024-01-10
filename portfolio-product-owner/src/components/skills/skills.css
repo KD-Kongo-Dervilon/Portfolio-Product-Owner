@@ -43,6 +43,12 @@
 .skills .bx-badge-check {
     font-size: 1rem;
     color: var(--title-color);
+    transition: .3s ease-in-out;
+}
+
+.skills .bx-badge-check:hover {
+    color: var(--link-blue);
+    font-size: 1.2rem;
 }
 
 .skills__name {

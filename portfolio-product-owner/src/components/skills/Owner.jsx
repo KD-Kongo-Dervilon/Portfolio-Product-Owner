@@ -47,7 +47,7 @@ const Owner = () => {
                         <i class="bx bx-badge-check"></i>
 
                         <div>
-                            <h3 className="skills__name">Désign</h3>
+                            <h3 className="skills__name">Design</h3>
                             <span className="skills__level">
                             Figma / Canva / Adobe XD
                             </span>
