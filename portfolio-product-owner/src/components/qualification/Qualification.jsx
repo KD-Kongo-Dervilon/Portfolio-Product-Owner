@@ -47,7 +47,7 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title"> Développeur Javascript React </h3>
+                                <h3 className="qualification__title"> Experience </h3>
                                 <span className="qualification__subtitle">
                                     Openclassrooms
                                 </span>
@@ -85,7 +85,7 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title"> Développeur Javascript React </h3>
+                                <h3 className="qualification__title"> Dévelo Suite 2 </h3>
                                 <span className="qualification__subtitle">
                                     Openclassrooms
                                 </span>
@@ -95,13 +95,12 @@ const Qualification = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div className="qualification__content">
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title"> Product Manager </h3>
+                                <h3 className="qualification__title"> test </h3>
                                 <span className="qualification__subtitle">
                                     Openclassrooms
                                 </span>
