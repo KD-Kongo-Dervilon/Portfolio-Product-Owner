@@ -8,11 +8,15 @@ import Services from './components/services/Services';
 import Qualification from './components/qualification/Qualification';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import ScrollUp from './components/scrollUp/ScrollUp';
+
 
 const App = () => {
   return (
     <>
       <Header/>
+
       <main className="main">
         <Home />
         <About/>
@@ -22,6 +26,9 @@ const App = () => {
         <Testimonials/>
         <Contact/>
       </main>
+
+        <Footer/>
+        <ScrollUp/>
     </>
   )
 }
