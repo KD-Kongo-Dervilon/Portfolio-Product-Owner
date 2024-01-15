@@ -92,11 +92,13 @@
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
+    border: 1px solid #000
 }
 
 .button-home:hover {
     background-color: #fff;
     color:#000;
+    border: 1px solid #000
 }
 
 .button-home:active {
