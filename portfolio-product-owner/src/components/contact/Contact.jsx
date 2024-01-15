@@ -37,7 +37,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
+                            <i className="bx bxl-discord-alt contact__card-icon"></i>
 
                             <h3 className="contact__card-title"> Discord </h3>
                             <span className="contact__card-data"> Raylight37 </span>
@@ -74,10 +74,10 @@ const Contact = () => {
                             />
                         </div>
 
-                        <div className="contact__form-div contact__form-area">
+                        <div className="contact__form-div contact">
                             <label className="contact__form-tag"> Projet </label>
                             <textarea
-                                name="projet" 
+                                name="project" 
                                 cols="30"
                                 rows="10"
                                 className="contact__form-input"

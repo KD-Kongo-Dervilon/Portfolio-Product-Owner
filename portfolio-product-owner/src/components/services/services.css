@@ -155,6 +155,10 @@
     }
     
     @media screen and (max-width: 576px) {
+        .services__container {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
         .services__modal-content {
             padding:4.5rem 1.5rem 2.5rem;
         }
@@ -164,17 +168,6 @@
         }
 
     }
-    
-    /* For small devices */
-    @media screen and (max-width: 350px) {
-        .services__container {
-            grid-template-columns: max-content;
-        }
 
-        .services__content {
-            padding-right: 6rem;
-        }
-    }
-    
 
 
