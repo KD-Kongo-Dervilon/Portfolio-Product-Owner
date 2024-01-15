@@ -33,3 +33,29 @@
 .swiper-pagination-bullet {
     background-color: var(--link-blue) !important;
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+        .testimonial__container {
+            width: initial;
+        }
+
+        .testimonial__card {
+            padding: 1.25rem 1.5rem;
+        }
+    }
+    
+    /* For medium devices */
+    @media screen and (max-width: 768px) {
+
+    }
+    
+    @media screen and (max-width: 576px) {
+    }
+    
+    /* For small devices */
+    @media screen and (max-width: 350px) {
+
+    }
+    
