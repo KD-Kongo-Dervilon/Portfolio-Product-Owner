@@ -1,3 +1,35 @@
 .testimonial__container {
     width: 750px;
 }
+
+.testimonial__card {
+    background-color: var(--container-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: var(--mb-3);
+}
+
+.testimonial__img {
+    width: 60px;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial__description {
+    font-size: 1rem;
+    margin-top: var(--mb-1);
+}
+
+
+
+/*=================== Swiper Class ============================*/
+
+.swiper-pagination-bullet {
+    background-color: var(--link-blue) !important;
+}

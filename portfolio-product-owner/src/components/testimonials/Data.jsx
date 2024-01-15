@@ -2,6 +2,13 @@ import Image1 from "../../assets/testimonial1.png";
 import Image2 from "../../assets/testimonial2.png";
 import Image3 from "../../assets/testimonial3.png";
 import Image4 from "../../assets/testimonial4.png";
+import Image5 from "../../assets/testimonial5.png";
+import Image6 from "../../assets/testimonial6.png";
+import Image7 from "../../assets/testimonial7.png";
+import Image8 from "../../assets/testimonial8.png";
+import Image9 from "../../assets/testimonial9.png";
+import Image10 from "../../assets/testimonial10.png";
+
 
 export const Data = [
     {
@@ -16,7 +23,7 @@ export const Data = [
         image: Image2,
         author: "Daryan Colard",
         title: "Managez des imprévus durant un sprint",
-        description:" Soutenance satisfaisante permettant de présenter la démarche suivie pour répondre aux différents problèmes rencontrés.Les étapes sont expliquées, les outils utilisés détaillés notamment à travers les livrables réalisés."
+        description:" Soutenance satisfaisante permettant de présenter la démarche suivie pour répondre aux différents problèmes rencontrés."
     },
     {
         id: 3,
@@ -31,5 +38,47 @@ export const Data = [
         author: "Cédric Compagnon",
         title: "Convertissez les visiteurs d'un site e-commerce en prospects",
         description:"Sans explication fortuite, la posture de l'apprenant concernant les livrables est à la hauteur de ce qui est demandé."
+    },
+    {
+        id: 5,
+        image: Image5,
+        author: "Chloé Pagès",
+        title: "Élaborez une stratégie de communication pour la release d'une nouvelle fonctionnalité",
+        description:"Bonne soutenance. Ton de voix dynamique et bon timing. Jeu de rôle respecté."
+    },
+    {
+        id: 6,
+        image: Image6,
+        author: "Carine Renaud",
+        title: "Élaborez une stratégie de communication pour la release d'une nouvelle fonctionnalité",
+        description:"Dervilon m'a présenter un story mapping du prototype de qualité."
+    },
+    {
+        id: 7,
+        image: Image7,
+        author: "Cyril Cieslak",
+        title: " Présentez un projet à des investisseurs",
+        description:"L'étudiant s'est appuyé sur sa vision produit, ses objectifs et ses contraintes pour réaliser son étude de faisabilité."
+    },
+    {
+        id: 8,
+        image: Image8,
+        author: "Eddy Noberto",
+        title: "Gérez la conception du site internet d'une association",
+        description:"Mbissi a réussi à déterminer les ressources nécessaires au projet en utilisant une méthodologie en cascade, en fournissant un cahier des charges complet."
+    },
+    {
+        id: 9,
+        image: Image9,
+        author: "Bruno Paulet",
+        title: "Accompagnez votre équipe dans les sprints de développement d'un site e-commerce",
+        description:"Très bon travail réalisé par Dervilon, restitution professionnelle et sérieuse.La présentation orale est préparée, claire et dans les temps."
+    },
+    {
+        id: 10,
+        image: Image10,
+        author: "Bertrand Bloc'H",
+        title: "Accompagnez votre équipe dans les sprints de développement d'un site e-commerce",
+        description:"Lors de notre discussion, tu as répondu avec pertinence et précision à toutes mes questions, ce qui a confirmé que tu maîtrisais parfaitement le projet."
     },
 ]
