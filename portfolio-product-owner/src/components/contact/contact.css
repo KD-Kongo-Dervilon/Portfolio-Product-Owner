@@ -24,6 +24,7 @@
     padding: 1rem;
     border-radius: 0.75rem;
     text-align: center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .contact__card-icon {
@@ -103,12 +104,13 @@
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
     background-color: var(--body-color);
-    z-index: 5;
+    z-index: 10;
 }
 
 .contact__form-area {
     height: 11rem;
 }
+
 
 .contact__form-area textarea {
     resize: none;
@@ -147,9 +149,3 @@
         width: 100%;
         }
     }
-    
-    /* For small devices */
-    @media screen and (max-width: 350px) {
-
-    }
-    
