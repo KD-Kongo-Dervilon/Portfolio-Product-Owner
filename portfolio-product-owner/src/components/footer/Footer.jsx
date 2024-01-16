@@ -28,15 +28,24 @@ const Footer = () => {
                 </ul>
 
                 <div className="footer__social">
-                    <a href="https://www.facebook.com/?locale=fr_FR" className="home_social-icon" target="_blank" rel="noreferrer">
+                    <a href="https://www.facebook.com/?locale=fr_FR" 
+                    className="footer_social-icon" 
+                    target="_blank" 
+                    rel="noreferrer">
                         <i class='bx bxl-facebook-circle'></i>
                     </a>
 
-                    <a href="https://www.youtube.com/" className="home_social-icon" target="_blank" rel="noreferrer">
+                    <a href="https://www.youtube.com/" 
+                    className="footer_social-icon" 
+                    target="_blank" 
+                    rel="noreferrer">
                         <i class="uil uil-youtube"></i>
                     </a>
 
-                    <a href="https://www.twitch.tv/" className="home_social-icon" target="_blank" rel="noreferrer">
+                    <a href="https://www.twitch.tv/" 
+                    className="footer_social-icon" 
+                    target="_blank" 
+                    rel="noreferrer">
                         <i class='bx bxl-twitch'></i>
                     </a>
                 </div>

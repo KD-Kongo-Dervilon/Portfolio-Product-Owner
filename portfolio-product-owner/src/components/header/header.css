@@ -15,44 +15,40 @@
     column-gap: 1.5rem;
 }
 
-.nav_toggle,
-.nav_toggle {
+.nav__logo,
+.nav__toggle {
     color : var(--title-color);
     font-weight: var(--font-medium);
 }
 
-.nav_list {
+.nav__list {
     display: flex;
     column-gap: 2rem;
 }
 
-.nav_link {
+.nav__link {
     display: flex;
     flex-direction:column;
     align-items: center;
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
     transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
 }
 
-.nav_icon,
+.nav__icon,
 .nav_close,
-.nav_toggle {
+.nav__toggle {
     display: none;
 }
 
-.nav_logo {
-    font-size: 1.5rem;
+.nav__logo {
+    font-size: 1.9rem;
     transition: all 0.5s ease-out;
     color: #000;
 }
 
-.nav_logo:hover {
+.nav__logo:hover {
     filter: drop-shadow(5px 5px 10px #fff);
     font-size: 2.5rem;
     color: var(--link-blue);
@@ -61,8 +57,13 @@
 
 /* Active link  */
 .active_link,
-.nav_link:hover {
+.nav__link:hover {
     color: var(--link-blue);
+}
+
+/* Change background header  */
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15)
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -78,7 +79,7 @@
         height: var(--header-height);
     }
 
-    .nav_menu {
+    .nav__menu {
         position:fixed;
         bottom: -100%;
         left: 0;
@@ -90,21 +91,25 @@
         transition: .3s;
     }
 
+    .nav__link {
+        font-size: var(--small-font-size);
+    }
+
     /* Show Menu */
     .show-menu {
         bottom: 0;
         transition: 0.2s ease;
     }
 
-    .nav_list {
+    .nav__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
 
-    .nav_icon {
-        font-size: 2.3em;
-        filter: drop-shadow(0 0 0.75rem rgb(251, 251, 251));
+    .nav__icon {
+        font-size: 2rem;
+        filter: drop-shadow(5px 5px 10px rgb(251,251,251));
     }
 
     .nav_close {
@@ -114,35 +119,40 @@
         font-size: 2.5em;
         cursor: pointer;
         color: var(--title-color);
+        transition: 0.3s;
     }
 
     .nav_close:hover {
         color: var(--link-blue);
+        filter: drop-shadow(5px 5px 10px #fff);
+        font-size: 3rem;
+        font-weight: bold;
     }
 
-    .nav_toggle {
+
+    .nav__toggle {
         font-size: 2.1rem;
         cursor: pointer;  
     }
 
-    .nav_toggle:hover {
+    .nav__toggle:hover {
         color: var(--link-blue);
     }
 
-    .nav_icon,
+    .nav__icon,
     .nav_close,
-    .nav_toggle {
+    .nav__toggle {
         display : flex;
     }
 }
 
 /* For small devices */
 @media screen and (max-width: 350px) {
-    .nav_menu {
+    .nav__menu {
         padding: 2rem 0.25rem 4rem;
     }
 
-    .nav_list {
+    .nav__list {
         column-gap: 0;
     }
 }
