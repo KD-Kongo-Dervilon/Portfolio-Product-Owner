@@ -116,6 +116,61 @@
     resize: none;
 }
 
+/*=============== Form Message ===============*/
+
+.success, .error {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 1rem;
+    padding:1rem;
+}
+.success, .error {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 1rem;
+    padding:1rem;
+}
+.success, .error {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 1rem;
+    padding:1rem;
+}
+
+.success {
+    background: green;
+}
+
+.error {
+    background: red;
+}
+
+@media screen and (max-width: 768px) {
+    .success, .error {
+        width: 250px;
+        padding: 0;
+    }
+
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

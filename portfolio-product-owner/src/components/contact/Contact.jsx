@@ -7,6 +7,7 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+        const formMess = document.querySelector(".form__message");
 
         emailjs.sendForm(
             "service_l6qltcy",
@@ -14,7 +15,25 @@ const Contact = () => {
             form.current,
             "Nzs-AvRciDNz7eJuf"
             )
-            e.target.reset()
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    form.current.reset();
+                    formMess.innerHTML = "<p class='success'>Message envoyé !</p>"
+
+                    setTimeout(() => {
+                        formMess.innerHTML = "";
+                    }, 2500);
+                },
+                (err) => {
+                    console.log(err.text);
+                    formMess.innerHTML = "<p class='error'>Une erreur s'est produite, veuillez réessayer</p>";
+
+                    setTimeout(() => {
+                        formMess.innerHTML = "";
+                    }, 2500);
+                }
+            );
     };
 
     return (
@@ -70,21 +89,24 @@ const Contact = () => {
 
                     <form ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Nom</label>
+                            <label htmlFor="name" className="contact__form-tag">Nom</label>
                             <input 
                                 type="text" 
+                                id="name"
                                 name="name"
+                                required
                                 className="contact__form-input"
                                 placeholder="Entre ton nom"
                             />
                         </div>
 
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Émail</label>
+                            <label htmlFor="email" className="contact__form-tag">Émail</label>
                             <input 
                                 type="email" 
                                 name="email"
                                 className="contact__form-input"
+                                required
                                 placeholder="Entre ton email"
                             />
                         </div>
@@ -93,6 +115,7 @@ const Contact = () => {
                             <label className="contact__form-tag"> Projet </label>
                             <textarea
                                 name="project" 
+                                required
                                 cols="30"
                                 rows="10"
                                 className="contact__form-input"
@@ -101,8 +124,8 @@ const Contact = () => {
                             </textarea>
                         </div>
 
-                        <button className="button button--flex button-home">
-                            Contact
+                        <button type="submit" className="button button--flex button-home">
+                            Envoyer
                             <svg className="hello" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="var(--container-color)" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="plane"><path d="M277.941,434.868c-4.176,0-7.518-2.132-10.75-4.193c-0.063-0.039-0.123-0.079-0.184-0.12l-52.157-35.538
 				                c-14.486,9.457-29,18.962-43.499,28.457l-10.657,6.979c-3.068,2.17-5.917,3.226-8.707,3.226c-2.827,0-5.433-1.124-7.336-3.166
 				                c-2.583-2.768-3.664-6.925-3.302-12.701v-76.839c0-2.272,1.073-4.411,2.894-5.771l180.875-135.021l-219.382,115.67
@@ -120,6 +143,8 @@ const Contact = () => {
                         </button>
                         
                     </form>
+
+                    <div className="form__message"></div>
                 </div>
             </div>
         </section>
