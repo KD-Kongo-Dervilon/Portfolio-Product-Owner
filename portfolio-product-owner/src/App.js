@@ -10,6 +10,7 @@ import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollUp/ScrollUp';
+import Work from './components/work/Work';
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
         <Skills/>
         <Services/>
         <Qualification/>
+        <Work/>
         <Testimonials/>
         <Contact/>
       </main>
