@@ -52,6 +52,11 @@
     align-items: center;
     column-gap: 0.25rem;
     margin-top: 1.3rem;
+    cursor: pointer;
+}
+
+.work__button:hover {
+    color: var(--link-blue);
 }
 
 .work__button-icon {
@@ -68,6 +73,126 @@
     background-color: var(--link-blue);
     color: var(--container-color);
 }
+
+.work__content, .work__button {
+    text-align: center;
+    justify-content: center;
+}
+
+/*=============== Modal ===============*/
+
+.work__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+
+.work__modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.work__modal-close:hover {
+    color: var(--link-blue);
+}
+
+
+.work__modal-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-medium);
+    margin-bottom: var(--mb-1);
+    margin-top: var(--mb-1);
+    background: var(--link-blue);
+    color: #fff;
+    border-radius: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.work__modal-description {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-2);
+}
+
+.work__modal-services {
+    row-gap: 0.75rem;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.work__modal-service {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+work__modal-icon {
+    color: var(--link-blue);
+    font-size: 1.3rem;
+}
+
+.work__modal-info {
+    font-size: var(--small-font-size);
+}
+
+/*------ Active Modal--------- */
+
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*=============== BREAKPOINTS Modal  ===============*/
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .work__content {
+        text-align: center;
+    }
+    }
+    
+    /* For medium devices */
+    @media screen and (max-width: 768px) {
+        .work__content {
+            padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+        }
+
+        .work__icon {
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .work__container {
+            text-align: center;
+        }
+        .work__modal-content {
+            padding:4.5rem 1.5rem 2.5rem;
+        }
+
+        .work__modal-description {
+            padding: 0;
+        }
+        .work__button {
+            justify-content: center;
+        }
+
+    }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
@@ -119,3 +244,4 @@
         }
     }
     
+

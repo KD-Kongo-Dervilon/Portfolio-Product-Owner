@@ -1,14 +1,137 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const WorksItems = ({item}) => {
+
+    const [toggleState, setToggleState] = useState(0);
+
+    const toggleTab = (index) => {
+        setToggleState(index);
+    }
+
+    
     return (
         <div className="work__card" key={item.id}>
-            <img src={item.image} alt="" className="work__img"/>
-            <h3 className="work__title">{item.title}</h3>
-            <h4>{item.skills}</h4>
-            <a href="#" className="work__button">
-                Demo <i className="bx bx-right-arrow-alt work__button-icon"></i>
-            </a>
+            <div className="work__content">
+                <div>
+                    <img src={item.image} alt="" className="work__img"/>
+                    <h3 className="work__title"> {item.title} </h3>
+                    <p className="work__modal-description">
+                        {item.skills}
+                    </p>
+                </div>
+
+                <span className="work__button" onClick={() => toggleTab(1)}> En savoir  <i className="uil uil-arrow-right work__button-icon"> </i></span>
+
+                <div className={toggleState === 1 ? "services__modal active-modal": "services__modal"}>
+                    <div className="services__modal-content">
+                        <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"> </i>
+                        <h3 className="services__modal-title"> {item.title} </h3>
+                        <p className="services__modal-description">
+                            {item.desc}
+                        </p>
+
+                        <h3 className="work__modal-title"> {item.liv} </h3>
+
+                        <ul className="work__modal-services grid">
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv1}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv2}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv3}
+                                </p>
+                            </li>
+                        </ul>
+
+                        <ul className="work__modal-services grid">
+                            <li className="services__modal-service">
+                                <p className="work__modal-info">
+                                    {item.liv4}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv5}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv6}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div className={toggleState === 1 ? "services__modal active-modal": "services__modal"}>
+                    <div className="services__modal-content">
+                        <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"> </i>
+                        <h3 className="services__modal-title"> {item.title} </h3>
+                        <p className="services__modal-description">
+                            {item.desc}
+                        </p>
+
+                        <a href="https://previewer.adalo.com/82f33a4c-6ace-41e1-91b3-d6902eada497" className="work__link-adalo">
+                            {item.link}
+                        </a>
+
+                        <h3 className="work__modal-title"> {item.liv} </h3>
+
+                        <ul className="work__modal-services grid">
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv1}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv2}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv3}
+                                </p>
+                            </li>
+                        </ul>
+
+                        <ul className="work__modal-services grid">
+                            <li className="services__modal-service">
+                                <p className="work__modal-info">
+                                    {item.liv4}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv5}
+                                </p>
+                            </li>
+
+                            <li className="services__modal-service">
+                                <p className="services__modal-info">
+                                    {item.liv6}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }
