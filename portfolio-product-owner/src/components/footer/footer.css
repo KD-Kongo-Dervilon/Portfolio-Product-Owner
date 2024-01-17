@@ -15,7 +15,17 @@
 .footer__title {
     text-align: center;
     margin-bottom: var(--mb-2);
+    font-size: 2.5rem;
+    transition: all 0.5s ease-out;
 }
+
+
+.footer__title:hover {
+    filter: drop-shadow(5px 5px 10px #fff);
+    color: var(--link-blue);
+    -webkit-filter: drop-shadow(5px 5px 10px #fff);
+}
+
 
 .footer__list {
     display: flex;
@@ -29,6 +39,17 @@
     justify-content: center;
     column-gap: 1.125rem;
     font-size: 2.5rem;
+}
+
+.footer_social-icon {
+    font-size: 3rem;
+}
+
+.footer__social-icon, .youtube {
+    color: red;
+}
+.footer__social-icon, .twitch {
+    color: var(--link-blue);
 }
 
 .footer__social-link {

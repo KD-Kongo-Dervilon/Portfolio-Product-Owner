@@ -21,8 +21,8 @@ const Footer = () => {
                     </li>
 
                     <li>
-                        <a href="#testimonials" className="footer__link">
-                            Avis
+                        <a href="#services" className="footer__link">
+                            Compétence
                         </a>
                     </li>
                 </ul>
@@ -36,14 +36,14 @@ const Footer = () => {
                     </a>
 
                     <a href="https://www.youtube.com/" 
-                    className="footer_social-icon" 
+                    className="footer_social-icon youtube" 
                     target="_blank" 
                     rel="noreferrer">
                         <i class="uil uil-youtube"></i>
                     </a>
 
                     <a href="https://www.twitch.tv/" 
-                    className="footer_social-icon" 
+                    className="footer_social-icon twitch" 
                     target="_blank" 
                     rel="noreferrer">
                         <i class='bx bxl-twitch'></i>

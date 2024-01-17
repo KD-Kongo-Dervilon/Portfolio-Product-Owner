@@ -59,7 +59,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
+                            <i className="bx bxl-whatsapp contact__card-icon what"></i>
 
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data"> +33 15 31 </span>
@@ -71,7 +71,7 @@ const Contact = () => {
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bxl-discord-alt contact__card-icon"></i>
+                            <i className="bx bxl-discord-alt contact__card-icon discord"></i>
 
                             <h3 className="contact__card-title"> Discord </h3>
                             <span className="contact__card-data"> Raylight37 </span>

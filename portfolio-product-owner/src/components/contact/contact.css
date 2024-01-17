@@ -57,6 +57,13 @@
     transition: 0.3s ease;
 }
 
+.discord {
+    color: var(--link-blue);
+}
+.what {
+    color: green;
+}
+
 .contact__button:hover {
     color: var(--link-blue);
     font-weight: var(--font-semi-bold);
