@@ -1,9 +1,13 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const form = useRef();
+
+    const notify = () => toast.success("Message envoyé");
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -19,7 +23,6 @@ const Contact = () => {
                 (result) => {
                     console.log(result.text);
                     form.current.reset();
-                    formMess.innerHTML = "<p class='success'>Message envoyé !</p>"
 
                     setTimeout(() => {
                         formMess.innerHTML = "";
@@ -124,7 +127,7 @@ const Contact = () => {
                             </textarea>
                         </div>
 
-                        <button type="submit" className="button button--flex button-home">
+                        <button type="submit"  onClick={notify} className="button button--flex button-home">
                             Envoyer
                             <svg className="hello" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="var(--container-color)" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="plane"><path d="M277.941,434.868c-4.176,0-7.518-2.132-10.75-4.193c-0.063-0.039-0.123-0.079-0.184-0.12l-52.157-35.538
 				                c-14.486,9.457-29,18.962-43.499,28.457l-10.657,6.979c-3.068,2.17-5.917,3.226-8.707,3.226c-2.827,0-5.433-1.124-7.336-3.166
@@ -145,6 +148,7 @@ const Contact = () => {
                     </form>
 
                     <div className="form__message"></div>
+                    <ToastContainer />
                 </div>
             </div>
         </section>
