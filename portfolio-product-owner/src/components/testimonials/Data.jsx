@@ -16,7 +16,7 @@ export const Data = [
         image: Image1,
         author: "Maîté Chamerois",
         title: "Gérez un sprint du début à la fin",
-        description: "La compréhension du produit est bonne, bonne capacité de répartition du projet en itérations."
+        description: "La compréhension du produit est bonne. Bonne capacité de répartition du projet en itérations."
     },
     {
         id: 2,

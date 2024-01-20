@@ -8,51 +8,58 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
-// import required modules
-import { Pagination } from 'swiper/modules';
-
+// Import des modules requis
+import { Pagination, Navigation } from 'swiper/modules';
 
 const Testimonials = () => {
-    
     return (
         <section className="testimonial container section">
             <h2 className="section__title"> Les avis sur mes Projets </h2>
             <span className="section__subtitle"> 
-                Lors de ma formation en gestion de produits, j'ai présenté des soutenances.
+                Lors de ma formation en gestion de produits, <br/>
+                j'ai présenté des soutenances ci-joint les avis laissés.
             </span>
 
-            <Swiper className="testimonial__container"
-            loop={true}
-            grabCursor={true}
-            spaceBetween={24}
-            pagination={{
-            clickable: true,
-        }}
-        breakpoints={{
-            576: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 48,
-            },
-        }}
-        modules={[Pagination]}
+            <Swiper
+                className="testimonial__container"
+                loop={true}
+                grabCursor={true}
+                spaceBetween={24}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }}
+                breakpoints={{
+                    576: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 48,
+                    },
+                }}
+                modules={[Pagination, Navigation]}
             >
-                {Data.map(({id, image, author, title, description}) => {
-                    return (
-                        <SwiperSlide className="testimonial__card" key={id}>
-                            <img src={image} alt="" className="testimonial__img" />
-                            <h3 className="testimonial__name">{title}</h3>
-                            <span className="testimonial__author">{author}</span>
-                            <p className="testimonial__description">{description}</p>
-                        </SwiperSlide>
-                    )
-                })}
+                {Data.map(({ id, image, author, title, description }) => (
+                    <SwiperSlide className="testimonial__card" key={id}>
+                        <img src={image} alt="" className="testimonial__img" />
+                        <h3 className="testimonial__name">{title}</h3>
+                        <span className="testimonial__author">{author}</span>
+                        <p className="testimonial__description">{description}</p>
+                    </SwiperSlide>
+                ))}
             </Swiper>
+            
+            {/* Ajout des flèches de navigation avec des classes personnalisées */}
+            <div className="swiper-button-next swiper-button-next-custom"></div>
+            <div className="swiper-button-prev swiper-button-prev-custom"></div>
         </section>
-    )
-}
+    );
+};
 
-export default Testimonials
+export default Testimonials;

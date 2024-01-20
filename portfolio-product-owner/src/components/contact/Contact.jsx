@@ -7,11 +7,51 @@ import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
     const form = useRef();
 
-    const notify = () => toast.success("Message envoyé");
+    const notify = (messageType, message) => {
+        if (messageType === 'success') {
+            toast.success(message);
+        } else if (messageType === 'error') {
+            toast.error(message);
+        }
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
         const formMess = document.querySelector(".form__message");
+
+        // Récupérer les valeurs des champs du formulaire
+        const name = form.current.elements.name.value;
+        const email = form.current.elements.email.value;
+        const project = form.current.elements.project.value;
+
+         // Vérifier si les champs sont vides
+        if (!name || !email || !project) {
+
+            setTimeout(() => {
+                formMess.innerHTML = "";
+            }, 2500);
+
+             // Utiliser la fonction notify pour afficher le message d'erreur
+            notify('error', 'Veuillez remplir tous les champs du formulaire');
+        
+          return; // Arrêter l'exécution si le formulaire est vide
+        }
+
+        // Valider le format de l'e-mail
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+         // Afficher un message d'erreur si l'e-mail n'est pas valide
+        formMess.innerHTML = "<p class='error'>Veuillez saisir une adresse e-mail valide</p>";
+
+        setTimeout(() => {
+            formMess.innerHTML = "";
+            }, 2500);
+
+             // Utiliser la fonction notify pour afficher le message d'erreur
+            notify('error', 'Veuillez saisir une adresse e-mail valide');
+        
+           return; // Arrêter l'exécution si l'e-mail n'est pas valide
+        }
 
         emailjs.sendForm(
             "service_l6qltcy",
@@ -27,6 +67,9 @@ const Contact = () => {
                     setTimeout(() => {
                         formMess.innerHTML = "";
                     }, 2500);
+
+                    notify('success', 'Message envoyé');
+
                 },
                 (err) => {
                     console.log(err.text);
@@ -35,6 +78,9 @@ const Contact = () => {
                     setTimeout(() => {
                         formMess.innerHTML = "";
                     }, 2500);
+
+                    // Utiliser la fonction notify pour afficher le message d'erreur
+                notify('error', 'Une erreur s\'est produite, veuillez réessayer');
                 }
             );
     };
@@ -67,7 +113,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data"> +33 15 31 </span>
 
-                            <a href="https://api.whatsapp.com/send?phone=0636158831&text=Hello, more information" className="contact__button">
+                            <a href="https://api.whatsapp.com/send?phone=0636158831&text=Hello,more information" className="contact__button">
                                 Écrivez moi 
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
@@ -127,7 +173,7 @@ const Contact = () => {
                             </textarea>
                         </div>
 
-                        <button type="submit"  onClick={notify} className="button button--flex button-home">
+                        <button type="submit"  onClick={sendEmail} className="button button--flex button-home">
                             Envoyer
                             <svg className="hello" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="var(--container-color)" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="plane"><path d="M277.941,434.868c-4.176,0-7.518-2.132-10.75-4.193c-0.063-0.039-0.123-0.079-0.184-0.12l-52.157-35.538
 				                c-14.486,9.457-29,18.962-43.499,28.457l-10.657,6.979c-3.068,2.17-5.917,3.226-8.707,3.226c-2.827,0-5.433-1.124-7.336-3.166

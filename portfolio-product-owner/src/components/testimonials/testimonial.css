@@ -1,7 +1,4 @@
-.testimonial__container {
-    width: 750px;
-}
-
+/* Styles communs pour les cartes de témoignage */
 .testimonial__card {
     background-color: var(--container-color);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -26,22 +23,100 @@
     margin-top: var(--mb-1);
 }
 
+/* Styles pour la container des témoignages */
+.testimonial__container {
+    width: 750px;
+}
 
-
-/*=================== Swiper Class ============================*/
-
+/* Styles pour la pagination du Swiper */
 .swiper-pagination-bullet {
     background-color: var(--link-blue) !important;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
+/* Breakpoint pour les grands appareils */
 @media screen and (max-width: 992px) {
-        .testimonial__container {
-            width: initial;
-        }
-
-        .testimonial__card {
-            padding: 1.25rem 1.5rem;
-        }
+    .testimonial__container {
+        width: initial;
     }
+
+    .testimonial__card {
+        padding: 1.25rem 1.5rem;
+    }
+}
+
+/* Styles pour les flèches de navigation du Swiper */
+.testimonial {
+    position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '\2192';
+    font-size: 1.5rem;
+    color: var(--link-blue);
+}
+
+.swiper-button-prev::after {
+    content: '\2190';
+}
+
+/* Styles spécifiques pour les flèches de navigation */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 62%) !important; 
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}
+
+/* Média query pour masquer les icônes en mode responsive */
+@media screen and (max-width: 765px) {
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+        display: none !important;
+    }
+}
+
+/* Média query pour ajuster la position des flèches sur les grands écrans */
+@media screen and (max-width: 992px) {
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, -15px) !important;
+        left: auto;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, -20px) !important;
+        right: auto;
+    }
+}

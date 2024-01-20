@@ -5,6 +5,33 @@
 :root {
   --header-height: 3rem;
 
+  /* ============================ HEADER CSS ============================ */
+
+  --z-fixed: 1000;
+  --header-height: 80px;
+  --body-color: #ffffff;
+  --title-color: #333333;
+  --link-blue: #7F00FF;
+  --font-medium: 500;
+  --normal-font-size: 16px;
+  --small-font-size: 14px;
+
+    /* ============================ Home CSS ============================ */
+
+    --z-fixed: 1000;
+    --header-height: 80px;
+    --body-color: #ffffff;
+    --title-color: #333333;
+    --link-blue: #7F00FF;
+    --font-medium: 500;
+    --normal-font-size: 16px;
+    --small-font-size: 14px;
+    --middle-font-size: 20px; /* Ajout d'une variable pour la taille de police moyenne */
+    --h2-font-size: 24px; /* Ajout d'une variable pour la taille de police h2 */
+    --mb-0-25: 0.25rem;
+    --mb-1: 1rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
 /* ============================ Colors ============================ */
 /*Color mode HSL(hue, saturation, lightness)*/
