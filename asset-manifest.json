@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Product-Owner/static/css/main.ccb27f28.css",
-    "main.js": "/Portfolio-Product-Owner/static/js/main.1014759c.js",
+    "main.css": "/Portfolio-Product-Owner/static/css/main.4fe18609.css",
+    "main.js": "/Portfolio-Product-Owner/static/js/main.2569be31.js",
     "static/media/work10.png": "/Portfolio-Product-Owner/static/media/work10.8da68e84acc1860bbcd9.png",
     "static/media/work4.png": "/Portfolio-Product-Owner/static/media/work4.529d99271b43bd92cedc.png",
     "static/media/work5.png": "/Portfolio-Product-Owner/static/media/work5.6a8260df3036b783d97b.png",
@@ -23,11 +23,11 @@
     "static/media/testimonial9.png": "/Portfolio-Product-Owner/static/media/testimonial9.ba3e9327f074cac4e49e.png",
     "static/media/testimonial4.png": "/Portfolio-Product-Owner/static/media/testimonial4.ba422ca13bb76ae93687.png",
     "index.html": "/Portfolio-Product-Owner/index.html",
-    "main.ccb27f28.css.map": "/Portfolio-Product-Owner/static/css/main.ccb27f28.css.map",
-    "main.1014759c.js.map": "/Portfolio-Product-Owner/static/js/main.1014759c.js.map"
+    "main.4fe18609.css.map": "/Portfolio-Product-Owner/static/css/main.4fe18609.css.map",
+    "main.2569be31.js.map": "/Portfolio-Product-Owner/static/js/main.2569be31.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccb27f28.css",
-    "static/js/main.1014759c.js"
+    "static/css/main.4fe18609.css",
+    "static/js/main.2569be31.js"
   ]
 }
