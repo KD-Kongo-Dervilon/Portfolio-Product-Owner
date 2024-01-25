@@ -75,8 +75,7 @@
 }
 
 .work__content, .work__button {
-    text-align: center;
-    justify-content: center;
+    text-align: left;
 }
 
 /*=============== Modal ===============*/
@@ -162,18 +161,23 @@ work__modal-icon {
 /* For large devices */
 @media screen and (max-width: 992px) {
     .work__content {
-        text-align: center;
-    }
+        text-align: left;
+        }
     }
     
     /* For medium devices */
     @media screen and (max-width: 768px) {
         .work__content {
             padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+            text-align: center;
         }
 
         .work__icon {
             font-size: 1.5rem;
+        }
+
+        .work__button {
+            justify-content: center;
         }
     }
     

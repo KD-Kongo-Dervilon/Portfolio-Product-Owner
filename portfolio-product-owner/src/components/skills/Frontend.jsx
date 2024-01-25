@@ -8,7 +8,7 @@ const Frontend = () => {
             <div className="skills__box">
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Langages de programmation</h3>
@@ -19,7 +19,7 @@ const Frontend = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Frameworks Js</h3>
@@ -30,7 +30,7 @@ const Frontend = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Tests et débogage</h3>
@@ -42,7 +42,7 @@ const Frontend = () => {
 
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Contrôle de version</h3>
@@ -53,7 +53,7 @@ const Frontend = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Frameworks </h3>
@@ -64,7 +64,7 @@ const Frontend = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Bases de données</h3>

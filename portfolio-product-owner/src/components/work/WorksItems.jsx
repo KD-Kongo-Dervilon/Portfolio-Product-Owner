@@ -29,50 +29,7 @@ const WorksItems = ({item}) => {
                         <p className="services__modal-description">
                             {item.desc}
                         </p>
-
-                        <h3 className="work__modal-title"> {item.liv} </h3>
-
-                        <ul className="work__modal-services grid">
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv1}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv2}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv3}
-                                </p>
-                            </li>
-                        </ul>
-
-                        <ul className="work__modal-services grid">
-                            <li className="services__modal-service">
-                                <p className="work__modal-info">
-                                    {item.liv4}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv5}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv6}
-                                </p>
-                            </li>
-                        </ul>
                     </div>
-
                 </div>
 
                 <div className={toggleState === 1 ? "services__modal active-modal": "services__modal"}>
@@ -86,51 +43,9 @@ const WorksItems = ({item}) => {
                         <a href="https://previewer.adalo.com/82f33a4c-6ace-41e1-91b3-d6902eada497" className="work__link-adalo">
                             {item.link}
                         </a>
-
-                        <h3 className="work__modal-title"> {item.liv} </h3>
-
-                        <ul className="work__modal-services grid">
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv1}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv2}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv3}
-                                </p>
-                            </li>
-                        </ul>
-
-                        <ul className="work__modal-services grid">
-                            <li className="services__modal-service">
-                                <p className="work__modal-info">
-                                    {item.liv4}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv5}
-                                </p>
-                            </li>
-
-                            <li className="services__modal-service">
-                                <p className="services__modal-info">
-                                    {item.liv6}
-                                </p>
-                            </li>
-                        </ul>
                     </div>
-
                 </div>
+
             </div>
         </div>
     )

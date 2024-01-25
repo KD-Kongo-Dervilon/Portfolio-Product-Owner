@@ -11,12 +11,11 @@ const Services = () => {
     return (
     <section className="services section" id="services">
         <h2 className="section__title"> Savoir Faire </h2>
-        <span className="section__subtitle"> Ce que je sais faire  </span>
 
         <div className="services__container container grid">
             <div className="services__content">
                 <div>
-                    <i class='uil uil-chart services__icon'></i>
+                    <i className='uil uil-chart services__icon'></i>
                     <h3 className="services__title"> Gestion de produit </h3>
                 </div>
 

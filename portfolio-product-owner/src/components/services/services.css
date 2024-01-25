@@ -87,11 +87,6 @@
     color: var(--link-blue);
 }
 
-.services__modal-title,
-.services__modal-description {
-    text-align: center;
-}
-
 .services__modal-title {
     font-size: var(--h3-font-size);
     font-weight: var(--h3-font-medium);
@@ -100,7 +95,7 @@
 
 .services__modal-description {
     font-size: var(--small-font-size);
-    padding: 0 3.5rem;
+    
     margin-bottom: var(--mb-2);
 }
 
@@ -147,11 +142,17 @@
 
         .services__content {
             padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+            text-align: center;
         }
 
         .services__icon {
             font-size: 1.5rem;
         }
+
+        .grid {
+            justify-content: center;
+        }
+
     }
     
     @media screen and (max-width: 576px) {

@@ -64,6 +64,10 @@
         grid-template-columns: max-content;
         row-gap: 2rem;
     }
+
+    .skills__content {
+        padding: 3rem;
+    }
 }
     
     /* For medium devices */

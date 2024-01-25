@@ -11,8 +11,7 @@ const Qualification = () => {
     return (
         <section className="qualification section">
             <h2 className="section__title"> Formation </h2>
-            <span className="section__subtitle">Mon parcours scolaire</span>
-
+            
             <div className="qualification__container container">
                 <div className="qualification__tabs">
                     <div className={

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Owner = () => {
     return (
@@ -8,7 +8,7 @@ const Owner = () => {
             <div className="skills__box">
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Méthodologies</h3>
@@ -19,7 +19,7 @@ const Owner = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">UX Design</h3>
@@ -30,7 +30,7 @@ const Owner = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Gestion de Projet</h3>
@@ -44,7 +44,7 @@ const Owner = () => {
 
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Design</h3>
@@ -55,7 +55,7 @@ const Owner = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name"> Présentation </h3>
@@ -66,7 +66,7 @@ const Owner = () => {
                     </div>
 
                     <div className="skills__data">
-                        <i class="bx bx-badge-check"></i>
+                        <i className="bx bx-badge-check"></i>
 
                         <div>
                             <h3 className="skills__name">Analyse de données</h3>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames";
 import "./header.css";
+import LogoHeader from "../../assets/LogoFooter.svg";
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
@@ -30,7 +31,12 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-          KD
+            <img src={LogoHeader} alt="
+                A wolf in a square with kd 
+                and below Kongo dervilon on 
+                the right a bird" 
+                  className="nav__logo-header">
+              </img>
         </a>
 
         <div className={classNames("nav__menu", { "show-menu": Toggle })}>
@@ -73,7 +79,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className={classNames("nav__toggle", { cross: Toggle })} onClick={() => showMenu(!Toggle)}>
+        
+        <div className={classNames("nav__toggle", { cross: Toggle, closed: !Toggle })} onClick={() => showMenu(!Toggle)}>
           <div className="bar"></div>
           <div className="bar"></div>
         </div>

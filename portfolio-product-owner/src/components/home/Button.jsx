@@ -4,7 +4,7 @@ const Button = ({ href, buttonText }) => {
     return (
         <a href={href} className="button button--flex button-home">
             {buttonText}
-            <svg className="hello" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="var(--container-color)" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="plane"><path d="M277.941,434.868c-4.176,0-7.518-2.132-10.75-4.193c-0.063-0.039-0.123-0.079-0.184-0.12l-52.157-35.538
+            <svg className="hello" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="var(--container-color)" enableBackground="new 0 0 512 512" viewBox="0 0 512 512" id="plane"><path d="M277.941,434.868c-4.176,0-7.518-2.132-10.75-4.193c-0.063-0.039-0.123-0.079-0.184-0.12l-52.157-35.538
 				c-14.486,9.457-29,18.962-43.499,28.457l-10.657,6.979c-3.068,2.17-5.917,3.226-8.707,3.226c-2.827,0-5.433-1.124-7.336-3.166
 				c-2.583-2.768-3.664-6.925-3.302-12.701v-76.839c0-2.272,1.073-4.411,2.894-5.771l180.875-135.021l-219.382,115.67
 				c-2.361,1.247-5.218,1.083-7.422-0.425l-6.944-4.746c-19.905-13.604-39.813-27.211-59.768-40.82

@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+//import CookieConsent from './CookieConsent';
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 import { ToastContainer, toast } from 'react-toastify';
@@ -6,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const form = useRef();
+    const [isSubmitting, setSubmitting] = useState(false);
 
     const notify = (messageType, message) => {
         if (messageType === 'success') {
@@ -17,31 +19,35 @@ const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (isSubmitting) {
+            return; // Si déjà en cours d'envoi, ne rien faire
+        }
+
         const formMess = document.querySelector(".form__message");
 
-        // Récupérer les valeurs des champs du formulaire
+        // Récupére les valeurs des champs du formulaire
         const name = form.current.elements.name.value;
         const email = form.current.elements.email.value;
         const project = form.current.elements.project.value;
 
-         // Vérifier si les champs sont vides
+         // Vérifie si les champs sont vides
         if (!name || !email || !project) {
 
             setTimeout(() => {
                 formMess.innerHTML = "";
             }, 2500);
 
-             // Utiliser la fonction notify pour afficher le message d'erreur
+             // Utilise la fonction notify pour afficher le message d'erreur
             notify('error', 'Veuillez remplir tous les champs du formulaire');
         
           return; // Arrêter l'exécution si le formulaire est vide
         }
 
-        // Valider le format de l'e-mail
+        // Valide le format de l'e-mail
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
-         // Afficher un message d'erreur si l'e-mail n'est pas valide
-        formMess.innerHTML = "<p class='error'>Veuillez saisir une adresse e-mail valide</p>";
+
 
         setTimeout(() => {
             formMess.innerHTML = "";
@@ -53,6 +59,8 @@ const Contact = () => {
            return; // Arrêter l'exécution si l'e-mail n'est pas valide
         }
 
+        setSubmitting(true); // Met à jour l'état d'envoi
+
         emailjs.sendForm(
             "service_l6qltcy",
             "template_m2dbvzo", 
@@ -63,6 +71,12 @@ const Contact = () => {
                 (result) => {
                     console.log(result.text);
                     form.current.reset();
+
+                     // Stocker le nom d'utilisateur et l'e-mail dans le cookie
+                    const expirationDate = new Date();
+                    expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Cookie valable pendant 1 an
+                    document.cookie = `userData=${name},${email}; expires=${expirationDate.toUTCString()}; path=/`;
+
 
                     setTimeout(() => {
                         formMess.innerHTML = "";
@@ -80,7 +94,11 @@ const Contact = () => {
                     }, 2500);
 
                     // Utiliser la fonction notify pour afficher le message d'erreur
-                notify('error', 'Une erreur s\'est produite, veuillez réessayer');
+                    notify('error', 'Une erreur s\'est produite, veuillez réessayer');
+                    }
+                )
+                .finally(() => {
+                    setSubmitting(false); // Met à jour l'état d'envoi après le traitement
                 }
             );
     };
@@ -88,7 +106,6 @@ const Contact = () => {
     return (
         <section className="contact section" id="contact">
             <h2 className="section__title"> Entrer en contact </h2>
-            <span className="section__subtitle"> contacter Moi </span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
@@ -106,7 +123,7 @@ const Contact = () => {
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
-
+                        
                         <div className="contact__card">
                             <i className="bx bxl-whatsapp contact__card-icon what"></i>
 
@@ -136,7 +153,7 @@ const Contact = () => {
                 <div className="contact__content">
                     <h3 className="contact__title">Décrivez moi votre projet</h3>
 
-                    <form ref={form} onSubmit={sendEmail} className="contact__form">
+                    <form ref={form}  className="contact__form">
                         <div className="contact__form-div">
                             <label htmlFor="name" className="contact__form-tag">Nom</label>
                             <input 
@@ -145,7 +162,7 @@ const Contact = () => {
                                 name="name"
                                 required
                                 className="contact__form-input"
-                                placeholder="Entre ton nom"
+                                placeholder="Votre nom"
                             />
                         </div>
 
@@ -156,7 +173,7 @@ const Contact = () => {
                                 name="email"
                                 className="contact__form-input"
                                 required
-                                placeholder="Entre ton email"
+                                placeholder="Votre email"
                             />
                         </div>
 
@@ -168,14 +185,14 @@ const Contact = () => {
                                 cols="30"
                                 rows="10"
                                 className="contact__form-input"
-                                placeholder="Écris ton projet"
+                                placeholder="Votre projet"
                                 >
                             </textarea>
                         </div>
 
                         <button type="submit"  onClick={sendEmail} className="button button--flex button-home">
                             Envoyer
-                            <svg className="hello" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="var(--container-color)" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="plane"><path d="M277.941,434.868c-4.176,0-7.518-2.132-10.75-4.193c-0.063-0.039-0.123-0.079-0.184-0.12l-52.157-35.538
+                            <svg className="hello" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="var(--container-color)" enableBackground="new 0 0 512 512" viewBox="0 0 512 512" id="plane"><path d="M277.941,434.868c-4.176,0-7.518-2.132-10.75-4.193c-0.063-0.039-0.123-0.079-0.184-0.12l-52.157-35.538
 				                c-14.486,9.457-29,18.962-43.499,28.457l-10.657,6.979c-3.068,2.17-5.917,3.226-8.707,3.226c-2.827,0-5.433-1.124-7.336-3.166
 				                c-2.583-2.768-3.664-6.925-3.302-12.701v-76.839c0-2.272,1.073-4.411,2.894-5.771l180.875-135.021l-219.382,115.67
 				                c-2.361,1.247-5.218,1.083-7.422-0.425l-6.944-4.746c-19.905-13.604-39.813-27.211-59.768-40.82

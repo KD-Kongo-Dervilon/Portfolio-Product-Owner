@@ -47,17 +47,15 @@
 }
 
 /* Logo */
-.nav__logo {
-    font-size: 1.9rem;
+.nav__logo-header {
+    width: 70px;
     transition: all 0.5s ease-out;
-    color: #000;
 }
 
-.nav__logo:hover {
+.nav__logo-header:hover {
     filter: drop-shadow(5px 5px 10px #fff);
-    font-size: 2.5rem;
-    color: var(--link-blue);
-    -webkit-filter: drop-shadow(5px 5px 10px #fff);
+    width: 75px;
+    stroke: red; /* Changez la couleur du contour de votre SVG au survol */
 }
 
 /* Active link */
@@ -157,11 +155,11 @@
 }
 
 .cross .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(0deg) translate(3px, 10px);
 }
 
 .cross .bar:nth-child(2) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(85deg) translate(-5px, -3px);
 }
 
 /* Responsive - Small devices */
@@ -230,5 +228,16 @@
         display: flex;
         flex-direction: column;
     }
+
+    .nav__logo-header {
+        width: 60px;
+        transition: all 0.5s ease-out;
+    }
+    
+    .nav__logo-header:hover {
+        filter: drop-shadow(5px 5px 10px #fff);
+        width: 80px;
+    }
+    
 }
 

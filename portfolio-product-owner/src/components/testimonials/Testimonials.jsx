@@ -17,10 +17,6 @@ const Testimonials = () => {
     return (
         <section className="testimonial container section">
             <h2 className="section__title"> Les avis sur mes Projets </h2>
-            <span className="section__subtitle"> 
-                Lors de ma formation en gestion de produits, <br/>
-                j'ai présenté des soutenances ci-joint les avis laissés.
-            </span>
 
             <Swiper
                 className="testimonial__container"

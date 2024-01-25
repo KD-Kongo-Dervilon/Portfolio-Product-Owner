@@ -1,7 +1,7 @@
 /* Styles communs pour les cartes de témoignage */
 .testimonial__card {
     background-color: var(--container-color);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 2rem;
     padding: 1.5rem 2rem;
     margin-bottom: var(--mb-3);
@@ -80,7 +80,7 @@
 .swiper-button-prev,
 .swiper-button-next {
     position: absolute;
-    top: var(--swiper-navigation-top-offset, 62%) !important; 
+    top: var(--swiper-navigation-top-offset, 62%) !important;
     width: calc(var(--swiper-navigation-size) / 44 * 27);
     height: var(--swiper-navigation-size);
     margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
@@ -95,6 +95,7 @@
 
 /* Média query pour masquer les icônes en mode responsive */
 @media screen and (max-width: 765px) {
+
     .swiper-button-prev:after,
     .swiper-button-next:after {
         font-family: swiper-icons;
@@ -105,15 +106,21 @@
         line-height: 1;
         display: none !important;
     }
+
+    .testimonial__card {
+        text-align: center;
+    }
 }
 
 /* Média query pour ajuster la position des flèches sur les grands écrans */
 @media screen and (max-width: 992px) {
+
     .swiper-button-next,
     .swiper-rtl .swiper-button-prev {
         right: var(--swiper-navigation-sides-offset, -15px) !important;
         left: auto;
     }
+
     .swiper-button-prev,
     .swiper-rtl .swiper-button-next {
         left: var(--swiper-navigation-sides-offset, -20px) !important;
