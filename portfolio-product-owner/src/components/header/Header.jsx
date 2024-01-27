@@ -3,6 +3,7 @@ import classNames from "classnames";
 import "./header.css";
 import LogoHeader from "../../assets/LogoFooter.svg";
 
+
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
@@ -32,11 +33,11 @@ const Header = () => {
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
             <img src={LogoHeader} alt="
-                A wolf in a square with kd 
-                and below Kongo dervilon on 
-                the right a bird" 
-                  className="nav__logo-header">
-              </img>
+              A wolf in a square with kd 
+              and below Kongo dervilon on 
+              the right a bird" 
+                className="nav__logo-header">
+            </img>
         </a>
 
         <div className={classNames("nav__menu", { "show-menu": Toggle })}>

@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./about.css";
-import AboutImg from "../../assets/IMG_0513.JPG";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/Dervilon.pdf";
 import Info from './Info';
 
 const DownloadButton = () => {
@@ -24,23 +23,25 @@ const DownloadButton = () => {
 };
 
 const About = () => {
+    const [activeTab, setActiveTab] = useState('description');
+
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+    };
+
     return (
         <section className="about section" id="about">
             <h2 className="section__title">À propos</h2>
 
-            <div className="about__container container grid">
-                <img src={AboutImg} alt="" className="about__img"></img>
+            <div className="about__container container">
+                <div className="about__tabs">
+                    <button className={`about__tab ${activeTab === 'description' && 'active'}`} onClick={() => handleTabClick('description')}>Information</button>
+                    <button className={`about__tab ${activeTab === 'info' && 'active'}`} onClick={() => handleTabClick('info')}>Expériences</button>
+                    <button className={`about__tab ${activeTab === 'qualités' && 'active'}`} onClick={() => handleTabClick('qualités')}>Qualités & Défault</button>
+                </div>
+                
                 <div className="about__data">
-                    <Info />
-                    <p className="about__description">
-                        En tant que Product Manager, j'aligne les équipes techniques,
-                        de design et business pour développer des produits digitaux centrés
-                        sur l'expérience utilisateur. Fort de mon expérience en développement
-                        React.js et en design, je facilite les discussions techniques et j'ai
-                        piloté avec succès 12 projets, contribuant ainsi à valider mes compétences
-                        en tant que Product Manager.
-                    </p>
-                    <DownloadButton />
+                    <TabContent activeTab={activeTab} />
                 </div>
             </div>
         </section>
@@ -48,3 +49,93 @@ const About = () => {
 };
 
 export default About;
+
+const TabContent = ({ activeTab }) => {
+
+    switch (activeTab) {
+        case 'info':
+            return (
+                <div className="flex-container">
+                    <div  className="about__content-container">
+                        <div className="about__qualities-block">
+                            <p className="about__additional-info">
+                                En tant que Product Manager, j'aligne les équipes techniques,
+                                de design et business pour développer des produits digitaux centrés
+                                sur l'expérience utilisateur. Fort de mon expérience en développement
+                                React.js et en design, je facilite les discussions techniques et j'ai
+                                piloté avec succès 12 projets, contribuant ainsi à valider mes compétences
+                                en tant que Product Manager.
+                            </p>
+                        </div>
+                        <Info />
+                    </div>
+                    <DownloadButton/>
+                </div>
+            );
+        case 'description':
+            return (
+                <div >
+                    <div className="about__qualities-block-description">
+                        <p className="about__description">
+                                <span className='span__about'>
+                                    De formation initiale en installation en télécommunication, 
+                                    j'ai ressenti le besoin de progresser davantage et d'explorer 
+                                    d'autres domaines. J'ai suivi différentes formations telles 
+                                    que le droit et la communication. J'ai également exercé les 
+                                    métiers de préparateur de commandes, cariste et opérateur 
+                                    de machines, ce qui m'a permis d'acquérir des compétences 
+                                    diverses telles que le travail en équipe et la communication. 
+                                    Mes différents parcours m'ont finalement conduit au domaine 
+                                    de l'informatique. J'ai d'abord découvert le métier d'UX designer.
+                                    Animé par l'envie d'apprendre davantage, je me suis tourné vers le 
+                                    développement informatique et me suis orienté vers la gestion de 
+                                    projet et le product management.
+                                </span>
+                        </p>
+                    </div>
+                    <DownloadButton/>
+                </div>
+            );
+        case 'download':
+            return (
+                <DownloadButton/>
+            );
+        case 'qualités':
+            return (
+                <div>
+                <div className="about__qualities">
+                    <div className="about__qualities-block appart">
+                        <h3>Qualités</h3>
+                        <span>
+                            <strong>Adaptabilité :</strong> 
+                                Mon parcours varié, du développement à la gestion de projet, témoigne de ma capacité à m'adapter à différentes situations.<br/>
+                        </span>
+                        <span>
+                            <strong>Réactivité :</strong> 
+                                Mon expérience en tant qu'opérateur sur machine chez Michelin atteste de ma réactivité face aux défis, notamment en cas de panne.<br/>
+                        </span>
+                        <span><strong>Persevérance :</strong> 
+                                Durant ma formation en développement JavaScript React, la persévérance m'a motivé à résoudre des problèmes de code complexes.<br/>
+                        </span>
+                    </div>
+                    <div className="about__qualities-block">
+                        <h3>Défauts</h3>
+                        <span>
+                            <strong> Méticuleux  :</strong> 
+                                En ce qui concerne mes défauts, je pourrais être qualifié de méticuleux, car j'ai tendance à prendre le temps nécessaire pour accomplir les tâches de manière précise et m'assurer de leur exactitude.<br/>
+                        </span>
+                        <span><strong> Introverti :</strong> 
+                                Mon point faible est mon caractère introverti, mais cela s'explique par ma volonté de comprendre en profondeur les équipes avec lesquelles je collabore. 
+                                Une fois à l'aise, je suis capable de développer une confiance mutuelle et de m'engager pleinement.
+                        </span>
+                    </div>
+                </div>
+                <DownloadButton/>
+                </div>
+            );
+        default:
+            return null;
+    }
+};
+
+

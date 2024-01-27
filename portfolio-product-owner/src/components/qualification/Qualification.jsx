@@ -84,20 +84,39 @@ const Qualification = () => {
                                 <div className="qualification__line"></div>
                             </div>
                         </div>
+
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <div className="qualification__line"></div>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title"> Administrateur Réseaux </h3>
+                                <span className="qualification__subtitle">
+                                    Cnam
+                                </span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2020 - 2019
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className={
                         toggleState === 2 ? "qualification__content qualification__content-active": "qualification__content"}>
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title"> Product Manager </h3>
+                                <h3 className="qualification__title"> Michelin </h3>
                                 <span className="qualification__subtitle">
-                                    Openclassrooms<br/>
-                                    Gestion de Projet
+                                    Opérateur sur machine
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                        2024 - 2023
+                                        2019 - 2018
                                 </div>
                             </div>
 
@@ -116,33 +135,52 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title"> Développeur Javascript React </h3>
+                                <h3 className="qualification__title"> Cariste  </h3>
                                 <span className="qualification__subtitle">
-                                    Openclassrooms<br/>
-                                    Développement de Site
+                                    Chargement , déchargement des colis
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                    2023 - 2022
+                                    2018 - 2017
                                 </div>
                             </div>
                         </div>
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title"> Michelin </h3>
+                                <h3 className="qualification__title"> Fresh envie </h3>
                                 <span className="qualification__subtitle">
-                                    Gestion et fonctionnement des machines de fabrication
+                                    Conditionnement des fruits surgelé
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
-                                        2019 - 2018
+                                        2016 - 2016
                                 </div>
                             </div>
 
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <div className="qualification__line"></div>
+                            </div>
+                        </div>
+                        
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <div className="qualification__line"></div>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title"> Adwork, Adecco  </h3>
+                                <span className="qualification__subtitle">
+                                    Préparation en entrepôt de commande
+                                </span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2015 - 2014
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -14,6 +14,7 @@ const Info = () => {
             <InfoItem iconClass="bx-award" title="Expérience" subtitle="1 an de travail" />
             <InfoItem iconClass="bx-briefcase-alt" title="Compléter" subtitle="12 - Projets" />
             <InfoItem iconClass="bx-user" title="Disponibilité" subtitle="Tout de suite" />
+            <InfoItem iconClass="bx bx-buildings" title="Métiers divers." subtitle="Compétences transversales." />
         </div>
     );
 };
