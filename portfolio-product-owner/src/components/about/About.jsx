@@ -37,7 +37,7 @@ const About = () => {
                 <div className="about__tabs">
                     <button className={`about__tab ${activeTab === 'description' && 'active'}`} onClick={() => handleTabClick('description')}>Information</button>
                     <button className={`about__tab ${activeTab === 'info' && 'active'}`} onClick={() => handleTabClick('info')}>Expériences</button>
-                    <button className={`about__tab ${activeTab === 'qualités' && 'active'}`} onClick={() => handleTabClick('qualités')}>Qualités & Défault</button>
+                    <button className={`about__tab ${activeTab === 'qualités' && 'active'}`} onClick={() => handleTabClick('qualités')}>Qualités & Défaut</button>
                 </div>
                 
                 <div className="about__data">

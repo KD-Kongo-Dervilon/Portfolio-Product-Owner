@@ -73,7 +73,7 @@ const Services = () => {
                             En tant que responsable du produit, je dirige l'équipe vers les objectifs du produit
                             en communiquant clairement et en inspirant. Je gère les relations avec les parties prenantes 
                             internes et externes pour aligner les attentes et faciliter le développement du produit. 
-                            En outre, je résout les problèmes et facilite le flux de travail pour assurer une progression fluide.
+                            En outre, je résous les problèmes et facilite le flux de travail pour assurer une progression fluide.
                         </p>
                         <ul className="services__modal-services grid">
                             <li className="services__modal-service">
@@ -116,7 +116,7 @@ const Services = () => {
                         <p className="services__modal-description">
                             En tant que responsable de produit , 
                             je collecte et analyse des données variées pour comprendre le comportement des utilisateurs 
-                            et orienter les décisions. j' utilise ces insights pour guider des ajustements et des améliorations itératives, 
+                            et orienter les décisions. J'utilise ces insights pour guider des ajustements et des améliorations itératives, 
                             assurant ainsi l'évolution du produit en réponse aux besoins changeants des utilisateurs et du marché.
                         </p>
                         <ul className="services__modal-services grid">

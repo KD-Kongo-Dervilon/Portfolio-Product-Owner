@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./home.css";
 import Button from './Button'; // Composant de bouton réutilisable
 
+
 const HomeData = () => {
+    const [scrollPercentage, setScrollPercentage] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollTop = window.scrollY;
+            const percentage = (scrollTop / scrollHeight) * 100;
+            setScrollPercentage(percentage);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div className="home_data">
             <h1 className="home_title">
@@ -18,8 +36,17 @@ const HomeData = () => {
             </p>
             {/* Utiliser le composant Button avec des propriétés pour la personnalisation */}
             <Button href="#contact" buttonText="Contact" />
+
+            {/* Indicateur de défilement */}
+            <div className="scroll-indicator-container">
+                <div
+                    className="scroll-indicator"
+                    style={{ width: `${scrollPercentage}%` }}
+                />
+            </div>
         </div>
-    )
+    );
 }
 
 export default HomeData;
+

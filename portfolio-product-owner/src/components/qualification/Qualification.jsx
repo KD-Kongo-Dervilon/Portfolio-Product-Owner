@@ -135,9 +135,9 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title"> Cariste  </h3>
+                                <h3 className="qualification__title"> Resto Du Coeur  </h3>
                                 <span className="qualification__subtitle">
-                                    Chargement , déchargement des colis
+                                    Cariste, chargement/ déchargement de colis
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>

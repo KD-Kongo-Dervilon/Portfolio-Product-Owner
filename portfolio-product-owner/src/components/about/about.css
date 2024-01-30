@@ -20,6 +20,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
     margin-right: 1rem;
+    color: #000;
     transition: background-color 0.3s ease;
 }
 

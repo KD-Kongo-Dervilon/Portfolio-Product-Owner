@@ -26,8 +26,8 @@
     --font-medium: 500;
     --normal-font-size: 16px;
     --small-font-size: 14px;
-    --middle-font-size: 20px; /* Ajout d'une variable pour la taille de police moyenne */
-    --h2-font-size: 24px; /* Ajout d'une variable pour la taille de police h2 */
+    --middle-font-size: 20px; 
+    --h2-font-size: 24px; 
     --mb-0-25: 0.25rem;
     --mb-1: 1rem;
     --mb-2-5: 2.5rem;
