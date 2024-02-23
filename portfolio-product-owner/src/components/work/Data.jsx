@@ -50,7 +50,7 @@ export const projectsData = [
         id: 6,
         image: Work6,
         title: "Élaborez une stratégie de communication",
-        skills: "Élaborer un prototype produit fonctionnel",
+        skills: "Concevoir des supports de communication internes et externes",
         desc:
             "Chez Customizely, j'ai développé une nouvelle fonctionnalité pour cibler les entreprises, offrant une personnalisation avancée de produits tels que tasses, sweats, T-shirts, stylos et cahiers. J'ai créé un product brief, une newsletter interne pour informer les collègues, et une stratégie marketing. Un calendrier éditorial mensuel et des KPI pertinents ont été élaborés, ainsi qu'une annonce pop-in pour les utilisateurs du site.",
         category: "Équipe"
@@ -59,7 +59,7 @@ export const projectsData = [
         id: 7,
         image: Work7,
         title: "Concevez un prototype des utilisateurs",
-        skills: "Mettre en place un système de veille",
+        skills: "Élaborer un prototype produit fonctionnel",
         desc:
             "J'ai commencé par explorer la désirabilité du produit, identifiant des problèmes, définissant des personas, et envisageant des solutions pour un marché B2C et B2B. J'ai créé un Lean UX Canvas, établi une liste de professionnels à contacter, et conçu un questionnaire pour valider mes hypothèses. En parallèle, j'ai réalisé un benchmark concurrentiel avec un SWOT. J'ai ensuite élaboré un prototype.Ci joint le lien mvp sur adalo",
         link: "https://previewer.adalo.com/82f33a4c-6ace-41e1-91b3-d6902eada497",

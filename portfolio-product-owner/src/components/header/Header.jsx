@@ -32,11 +32,10 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
-            <img src={LogoHeader} alt="
-              A wolf in a square with kd 
-              and below Kongo dervilon on 
-              the right a bird" 
-                className="nav__logo-header">
+            <img 
+              src={LogoHeader} 
+              alt="A wolf in a square with kd  and below Kongo dervilon on the right a bird" 
+              className="nav__logo-header">
             </img>
         </a>
 
@@ -47,7 +46,7 @@ const Header = () => {
                 href="#home"
                 onClick={() => setActiveNav("#home")}
                 className={
-                  activeNav === "#home" ? " nav__link active-link" : "nav__link"
+                  activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
                 <i className="uil uil-estate nav__icon"></i> Accueil

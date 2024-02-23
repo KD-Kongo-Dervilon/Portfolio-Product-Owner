@@ -138,7 +138,6 @@
 
 .button {
     box-shadow: 0 5px #666;
-    border: 1px solid #000;
 }
 
 .hello {
@@ -169,7 +168,7 @@
     }
 
     .about__data {
-        text-align: center;
+        text-align: left;
     }
 
     .about__info {
@@ -193,8 +192,7 @@
     }
 
     .about__tabs {
-        flex-direction: column;
-        align-items: center;
+        column-gap: 1rem;
     }
 
     .about__tab {
@@ -211,6 +209,19 @@
 
     .about__container {
         padding: 0rem 2rem 0rem;
+    }
+
+}
+
+/* For small devices */
+@media screen and (max-width: 475px) {
+    .about__tabs {
+        column-gap: 1rem;
+    }
+
+    .about__tabs {
+        flex-direction: column;
+        align-items: center;
     }
 
 }
@@ -240,7 +251,7 @@
 @media screen and (max-width: 576px) {
 
     .about__tab {
-        width: 100%;
+        width: 70%;
         margin-right: 0;
         margin-bottom: 1rem;
     }
@@ -248,6 +259,11 @@
         width: 100%;
         display:flex;
         flex-direction:column;
+    }
+
+
+    .about__container {
+        padding: 0rem 2rem 0rem;
     }
 
 }

@@ -16,7 +16,7 @@ const socialLinks = [
         href: 'https://github.com/KD-Kongo-Dervilon',
         iconClass: 'uil uil-github-alt',
         label: 'GitHub'
-    }
+    },
 ];
 
 const Social = () => {

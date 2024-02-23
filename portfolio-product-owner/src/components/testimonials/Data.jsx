@@ -78,7 +78,7 @@ export const Data = [
         id: 10,
         image: Image10,
         author: "Bertrand Bloc'H",
-        title: "Accompagnez votre équipe dans les sprints de développement d'un site e-commerce",
+        title: "Menez la stratégie produit d'une organisation",
         description: "Lors de notre discussion, tu as répondu avec pertinence et précision à toutes mes questions, ce qui a confirmé que tu maîtrisais parfaitement le projet."
     },
 ]
