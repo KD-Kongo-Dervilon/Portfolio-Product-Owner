@@ -1,87 +1,33 @@
 import React from 'react';
 
+const Skill = ({ name, level }) => (
+    <div className="skills__data">
+        <i className="bx bx-badge-check"></i>
+        <div>
+            <h3 className="skills__name">{name}</h3>
+            <span className="skills__level">{level}</span>
+        </div>
+    </div>
+);
+
 const Owner = () => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Product Manager </h3>
-
+            <h3 className="skills__title">Product Manager</h3>
             <div className="skills__box">
                 <div className="skills__group">
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Méthodologies</h3>
-                            <span className="skills__level">
-                            Agile / Scrum / Waterfall 
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">UX Design</h3>
-                            <span className="skills__level">
-                                Heurisitque de Nielsen
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Gestion de Projet</h3>
-                            <span className="skills__level"> 
-                                Trello / Notion / Miro / Jira
-                            </span>
-                        </div>
-                    </div>
-
+                    <Skill name="Méthodologies" level="Agile / Scrum / Waterfall" />
+                    <Skill name="UX Design" level="Heuristique de Nielsen" />
+                    <Skill name="Gestion de Projet" level="Trello / Notion / Miro / Jira" />
                 </div>
-
                 <div className="skills__group">
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Design</h3>
-                            <span className="skills__level">
-                            Figma / Canva / Adobe XD
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name"> Présentation </h3>
-                            <span className="skills__level">
-                                PowerPoint / Google Slides 
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Analyse de données</h3>
-                            <span className="skills__level">
-                                Excel / Google Analytics
-                            </span>
-                        </div>
-                    </div>
-                    
+                    <Skill name="Design" level="Figma / Canva / Adobe XD" />
+                    <Skill name="Présentation" level="PowerPoint / Google Slides" />
+                    <Skill name="Analyse de données" level="Excel / Google Analytics" />
                 </div>
             </div>
-
         </div>
-    )
+    );
 }
 
-export default Owner
-
+export default Owner;

@@ -3,21 +3,14 @@ import classNames from "classnames";
 import "./header.css";
 import LogoHeader from "../../assets/LogoFooter.svg";
 
-
 const Header = () => {
-  const [Toggle, showMenu] = useState(false);
+  const [toggle, setToggle] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
   
   useEffect(() => {
-    /*=============== Changement de fond du Header ===============*/
     const handleScroll = () => {
       const header = document.querySelector(".header");
-
-      if (window.scrollY >= 560) {
-        header.classList.add("scroll-header");
-      } else {
-        header.classList.remove("scroll-header");
-      }
+      header.classList.toggle("scroll-header", window.scrollY >= 560);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,60 +20,50 @@ const Header = () => {
     };
   }, []);
 
-  /*=============== Toggle Menu ===============*/
+  const handleMenuToggle = () => {
+    setToggle(!toggle);
+  };
+
+  const handleNavLinkClick = (navId) => {
+    setActiveNav(navId);
+    setToggle(false);
+  };
+
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">
-            <img 
-              src={LogoHeader} 
-              alt="A wolf in a square with kd  and below Kongo dervilon on the right a bird" 
-              className="nav__logo-header">
-            </img>
+        <a href="/" className="nav__logo">
+          <img 
+            src={LogoHeader} 
+            alt="A wolf in a square with kd  and below Kongo dervilon on the right a bird" 
+            className="nav__logo-header"
+          />
         </a>
 
-        <div className={classNames("nav__menu", { "show-menu": Toggle })}>
+        <div className={classNames("nav__menu", { "show-menu": toggle })}>
           <ul className="nav__list grid">
-            <li className="nav_item">
-              <a
-                href="#home"
-                onClick={() => setActiveNav("#home")}
-                className={
-                  activeNav === "#home" ? "nav__link active-link" : "nav__link"
-                }
-              >
-                <i className="uil uil-estate nav__icon"></i> Accueil
-              </a>
-            </li>
-            <li className="nav_item">
-              <a href="#about" className="nav__link">
-                <i className="uil uil-user nav__icon"></i> À propos
-              </a>
-            </li>
-            <li className="nav_item">
-              <a href="#skills" className="nav__link">
-                <i className="uil uil-file-alt nav__icon"></i> Compétences
-              </a>
-            </li>
-            <li className="nav_item">
-              <a href="#services" className="nav__link">
-                <i className="uil uil-briefcase-alt nav__icon"></i> Savoir-Faire
-              </a>
-            </li>
-            <li className="nav_item">
-              <a href="#portfolio" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i> Portfolio
-              </a>
-            </li>
-            <li className="nav_item">
-              <a href="#contact" className="nav__link">
-                <i className="uil uil-message nav__icon"></i> Contact
-              </a>
-            </li>
+            {[
+              { id: "home", label: "Accueil", icon: "uil uil-estate" },
+              { id: "about", label: "À propos", icon: "uil uil-user" },
+              { id: "skills", label: "Compétences", icon: "uil uil-file-alt" },
+              { id: "services", label: "Savoir-Faire", icon: "uil uil-briefcase-alt" },
+              { id: "portfolio", label: "Portfolio", icon: "uil uil-scenery" },
+              { id: "contact", label: "Contact", icon: "uil uil-message" }
+            ].map((navItem) => (
+              <li className="nav_item" key={navItem.id}>
+                <a
+                  href={`#${navItem.id}`}
+                  className={classNames("nav__link", { "active-link": activeNav === `#${navItem.id}` })}
+                  onClick={() => handleNavLinkClick(`#${navItem.id}`)}
+                >
+                  <i className={`${navItem.icon} nav__icon`}></i> {navItem.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
         
-        <div className={classNames("nav__toggle", { cross: Toggle, closed: !Toggle })} onClick={() => showMenu(!Toggle)}>
+        <div className={classNames("nav__toggle", { cross: toggle, closed: !toggle })} onClick={handleMenuToggle}>
           <div className="bar"></div>
           <div className="bar"></div>
         </div>

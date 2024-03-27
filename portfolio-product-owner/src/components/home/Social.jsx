@@ -21,24 +21,24 @@ const socialLinks = [
 
 const Social = () => {
     return (
-        <div>
-            <div className="home_social">
-                {socialLinks.map((link, index) => (
-                    <a
-                        key={index}
-                        href={link.href}
-                        className="home_social-icon"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label={link.label}
-                    >
-                        <i className={link.iconClass}></i>
-                    </a>
+        <div className="home_social">
+            <ul>
+                {socialLinks.map((link) => (
+                    <li key={link.href}>
+                        <a
+                            href={link.href}
+                            className="home_social-icon"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={link.label}
+                        >
+                            <i className={link.iconClass}></i>
+                        </a>
+                    </li>
                 ))}
-            </div>
+            </ul>
         </div>
     );
 };
 
 export default Social;
-

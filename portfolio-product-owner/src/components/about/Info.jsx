@@ -1,17 +1,19 @@
 import React from 'react';
 
-const InfoItem = ({ iconClass, title, subtitle }) => (
-    <div className="about__box">
-        <i className={`bx ${iconClass} about__icon`}></i>
-        <h3 className="about__title">{title}</h3>
-        <span className="about__subtitle">{subtitle}</span>
+const InfoItem = React.memo(({ iconClass, title, subtitle }) => (
+    <div className="about__box" aria-label={title}>
+        <i className={`bx ${iconClass} about__icon`} aria-hidden="true"></i>
+        <div>
+            <h3 className="about__title">{title}</h3>
+            <span className="about__subtitle">{subtitle}</span>
+        </div>
     </div>
-);
+));
 
 const Info = () => {
     return (
         <div className="about__info grid">
-            <InfoItem iconClass="bx-award" title="Expérience" subtitle="1 an de travail" />
+            <InfoItem iconClass="bx-award" title="Expérience" subtitle="Diverses et variées" />
             <InfoItem iconClass="bx-briefcase-alt" title="Compléter" subtitle="12 - Projets" />
             <InfoItem iconClass="bx-user" title="Disponibilité" subtitle="Tout de suite" />
             <InfoItem iconClass="bx bx-buildings" title="Métiers divers." subtitle="Compétences transversales." />

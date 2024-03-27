@@ -9,76 +9,69 @@ import Image8 from "../../assets/testimonial8.png";
 import Image9 from "../../assets/testimonial9.png";
 import Image10 from "../../assets/testimonial10.png";
 
+const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10];
 
-export const Data = [
+const Data = [
     {
         id: 1,
-        image: Image1,
         author: "Maîté Chamerois",
         title: "Gérez un sprint du début à la fin",
         description: "La compréhension du produit est bonne. Bonne capacité de répartition du projet en itérations."
     },
     {
         id: 2,
-        image: Image2,
         author: "Daryan Colard",
         title: "Managez des imprévus durant un sprint",
         description: "Soutenance satisfaisante permettant de présenter la démarche suivie pour répondre aux différents problèmes rencontrés."
     },
     {
         id: 3,
-        image: Image3,
         author: "Romain Dassy",
         title: "Entretenez votre Product Backlog",
         description: "La présentation montre les différentes étapes de la review (ce qui a été fait, démo, et les prochaines releases)."
     },
     {
         id: 4,
-        image: Image4,
         author: "Cédric Compagnon",
         title: "Convertissez les visiteurs d'un site e-commerce en prospects",
         description: "Sans explication fortuite, la posture de l'apprenant concernant les livrables est à la hauteur de ce qui est demandé."
     },
     {
         id: 5,
-        image: Image5,
         author: "Chloé Pagès",
         title: "Élaborez une stratégie de communication pour la release d'une nouvelle fonctionnalité",
         description: "Bonne soutenance. Ton de voix dynamique et bon timing. Jeu de rôle respecté."
     },
     {
         id: 6,
-        image: Image6,
         author: "Carine Renaud",
         title: "Élaborez une stratégie de communication pour la release d'une nouvelle fonctionnalité",
         description: "Dervilon m'a présenté un story mapping du prototype de qualité."
     },
     {
         id: 7,
-        image: Image7,
         author: "Cyril Cieslak",
         title: "Présentez un projet à des investisseurs",
         description: "L'étudiant s'est appuyé sur sa vision produit, ses objectifs et ses contraintes pour réaliser son étude de faisabilité."
     },
     {
         id: 8,
-        image: Image8,
         author: "Eddy Noberto",
         title: "Gérez la conception du site internet d'une association",
         description: "Mbissi a réussi à déterminer les ressources nécessaires au projet en utilisant une méthodologie en cascade, en fournissant un cahier des charges complet."
     },
     {
         id: 9,
-        image: Image9,
         author: "Bruno Paulet",
         title: "Accompagnez votre équipe dans les sprints de développement d'un site e-commerce",
         description: "Très bon travail réalisé par Dervilon, restitution professionnelle et sérieuse. La présentation orale est préparée, claire et dans les temps."
     },
     {
         id: 10,
-        image: Image10,
         author: "Bertrand Bloc'H",
         title: "Menez la stratégie produit d'une organisation",
         description: "Lors de notre discussion, tu as répondu avec pertinence et précision à toutes mes questions, ce qui a confirmé que tu maîtrisais parfaitement le projet."
     },
-]
+].map((item, index) => ({ ...item, image: images[index] }));
+
+export { Data };

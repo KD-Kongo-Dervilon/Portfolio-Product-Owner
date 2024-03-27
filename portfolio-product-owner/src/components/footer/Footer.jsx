@@ -6,35 +6,28 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container container">
-        
                 <div className="footer__logo--container">
-                    <img src={LogoFooter} alt="" className="logo__footer"></img>
+                    <img src={LogoFooter} alt="Logo Footer" className="logo__footer"></img>
                 </div>
 
                 <ul className="footer__list">
-                    <li>
-                        <a href="#about" className="footer__link">
-                            À propos
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#portfolio" className="footer__link">
-                            Projet
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#services" className="footer__link">
-                            Compétences
-                        </a>
-                    </li>
+                    {[
+                        { label: "À propos", href: "#about" },
+                        { label: "Projet", href: "#portfolio" },
+                        { label: "Compétences", href: "#services" }
+                    ].map((item, index) => (
+                        <li key={index}>
+                            <a href={item.href} className="footer__link">
+                                {item.label}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
 
-                <span className="footer__copy">&#169; KD Kongo Dervilon reserved</span>
+                <span className="footer__copy">&#169; KD Kongo Dervilon réservé</span>
             </div>
         </footer>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

@@ -1,84 +1,33 @@
-import React from 'react'
+import React from 'react';
+
+const Skill = ({ name, level }) => (
+    <div className="skills__data">
+        <i className="bx bx-badge-check"></i>
+        <div>
+            <h3 className="skills__name">{name}</h3>
+            <span className="skills__level">{level}</span>
+        </div>
+    </div>
+);
 
 const Frontend = () => {
     return (
         <div className="skills__content">
-            <h3 className="skills__title">Frontend /Backend</h3>
-
+            <h3 className="skills__title">Frontend / Backend</h3>
             <div className="skills__box">
                 <div className="skills__group">
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Langages de programmation</h3>
-                            <span className="skills__level">
-                                Html-CSS / JavaScript 
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Frameworks Js</h3>
-                            <span className="skills__level">
-                                React.js/ Next js/ Redux-Toolkit
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Tests et débogage</h3>
-                            <span className="skills__level"> Tests unitaires / Jest  </span>
-                        </div>
-                    </div>
-
+                    <Skill name="Langages de programmation" level="Html-CSS / JavaScript" />
+                    <Skill name="Frameworks Js" level="React.js / Next.js / Redux-Toolkit" />
+                    <Skill name="Tests et débogage" level="Tests unitaires / Jest" />
                 </div>
-
                 <div className="skills__group">
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Contrôle de version</h3>
-                            <span className="skills__level">
-                                Git-Github
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Frameworks </h3>
-                            <span className="skills__level">
-                                Express.js (Node.js), 
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className="bx bx-badge-check"></i>
-
-                        <div>
-                            <h3 className="skills__name">Bases de données</h3>
-                            <span className="skills__level">
-                                MongoDB
-                            </span>
-                        </div>
-                    </div>
-                    
+                    <Skill name="Contrôle de version" level="Git-Github" />
+                    <Skill name="Frameworks" level="Express.js (Node.js)" />
+                    <Skill name="Bases de données" level="MongoDB" />
                 </div>
             </div>
-
         </div>
-    )
+    );
 }
 
-export default Frontend
+export default Frontend;

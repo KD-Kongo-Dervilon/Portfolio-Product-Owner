@@ -4,8 +4,7 @@ const ScrollDown = ({ targetId = "about", buttonText = "Scroll Down" }) => {
     return (
         <div className="home_scroll">
             {/* Utilisation de la propriété targetId pour définir la cible du lien */}
-            
-            <a href={`#${targetId}`} className="home_scroll-button button--flex">
+            <button aria-label={`Scroll to ${targetId}`} className="home_scroll-button button--flex" onClick={() => document.getElementById(targetId).scrollIntoView({ behavior: "smooth" })}>
                 {/* Utilisation d'une balise <span> pour le texte du bouton, améliore l'accessibilité */}
                 <svg className="home_scroll-mouse wheel" xmlns="http://www.w3.org/2000/svg" width="48" height="48" id="scroll">
                     <path fill="none" d="M0 0h48v48H0z"></path>
@@ -14,7 +13,7 @@ const ScrollDown = ({ targetId = "about", buttonText = "Scroll Down" }) => {
                 
                 {/* Utilisation de la propriété buttonText pour définir le texte du bouton */}
                 <span className="home_scroll-name"> {buttonText} </span>
-            </a>
+            </button>
         </div>
     );
 }
