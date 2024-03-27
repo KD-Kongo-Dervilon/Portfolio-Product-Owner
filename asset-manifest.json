@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Product-Owner/static/css/main.0ab4ec10.css",
-    "main.js": "/Portfolio-Product-Owner/static/js/main.489701bd.js",
+    "main.css": "/Portfolio-Product-Owner/static/css/main.5183de80.css",
+    "main.js": "/Portfolio-Product-Owner/static/js/main.955b6922.js",
     "static/media/work10.png": "/Portfolio-Product-Owner/static/media/work10.8da68e84acc1860bbcd9.png",
     "static/media/work4.png": "/Portfolio-Product-Owner/static/media/work4.529d99271b43bd92cedc.png",
     "static/media/work5.png": "/Portfolio-Product-Owner/static/media/work5.6a8260df3036b783d97b.png",
@@ -9,8 +9,7 @@
     "static/media/work2.png": "/Portfolio-Product-Owner/static/media/work2.6310c4e0d80018c2b6ea.png",
     "static/media/work3.png": "/Portfolio-Product-Owner/static/media/work3.119802c8e89a2b2a8759.png",
     "static/media/work6.png": "/Portfolio-Product-Owner/static/media/work6.17017dc6017c72de479d.png",
-    "static/media/IMG_0513.JPG": "/Portfolio-Product-Owner/static/media/IMG_0513.8f960cece8d46808c48c.JPG",
-    "static/media/cv.pdf": "/Portfolio-Product-Owner/static/media/cv.4a34b17993c2790b1708.pdf",
+    "static/media/CV-product_owner-Mbissi-dervilon.pdf": "/Portfolio-Product-Owner/static/media/CV-product_owner-Mbissi-dervilon.b8151d76c43a27d546f9.pdf",
     "static/media/work11.png": "/Portfolio-Product-Owner/static/media/work11.0f3e2ff498f9d9e54718.png",
     "static/media/testimonial10.png": "/Portfolio-Product-Owner/static/media/testimonial10.1dbf553e0a82d03a7ce2.png",
     "static/media/testimonial1.png": "/Portfolio-Product-Owner/static/media/testimonial1.3f889d0af5f26871fbcc.png",
@@ -22,13 +21,13 @@
     "static/media/testimonial5.png": "/Portfolio-Product-Owner/static/media/testimonial5.d267a2f5b9581cb8252a.png",
     "static/media/testimonial9.png": "/Portfolio-Product-Owner/static/media/testimonial9.ba3e9327f074cac4e49e.png",
     "static/media/testimonial4.png": "/Portfolio-Product-Owner/static/media/testimonial4.ba422ca13bb76ae93687.png",
-    "static/media/LogoFooter.svg": "/Portfolio-Product-Owner/static/media/LogoFooter.40658b287ab36b5d8345403394883c92.svg",
+    "static/media/LogoFooter.svg": "/Portfolio-Product-Owner/static/media/LogoFooter.80dc1b1c89b15a47cfb2ccb4eb6da67a.svg",
     "index.html": "/Portfolio-Product-Owner/index.html",
-    "main.0ab4ec10.css.map": "/Portfolio-Product-Owner/static/css/main.0ab4ec10.css.map",
-    "main.489701bd.js.map": "/Portfolio-Product-Owner/static/js/main.489701bd.js.map"
+    "main.5183de80.css.map": "/Portfolio-Product-Owner/static/css/main.5183de80.css.map",
+    "main.955b6922.js.map": "/Portfolio-Product-Owner/static/js/main.955b6922.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ab4ec10.css",
-    "static/js/main.489701bd.js"
+    "static/css/main.5183de80.css",
+    "static/js/main.955b6922.js"
   ]
 }
