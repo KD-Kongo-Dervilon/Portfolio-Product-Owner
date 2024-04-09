@@ -57,9 +57,14 @@ const TabContent = ({ activeTab }) => {
                     <div  className="about__content-container">
                         <div className="about__qualities-block ">
                             <p className="about__additional-info">
-                                <strong>"Grâce à</strong> une expérience professionnelle variée et enrichissante, j'apporte une perspective solide et une valeur ajoutée significative à toute équipe ou entreprise. Ma formation de product manager m'a doté d'une approche méthodique et orientée vers les résultats dans la gestion des produits, ainsi que d'une capacité à travailler efficacement avec des équipes multidisciplinaires.<br/><br/>
-                                <strong>En tant </strong> que Développeur JavaScript React, je me suis concentré sur la conception d'interfaces utilisateur, mettant l'accent sur l'expérience utilisateur et maintenant un haut niveau de qualité grâce à ma maîtrise des méthodologies Agile et Scrum. Mon expérience chez Michelin a renforcé mes compétences en gestion opérationnelle et en respect des normes de qualité, témoignant de ma capacité à m'adapter à différents environnements de travail et à relever de nouveaux défis.<br/><br/>
-                                <strong>Ma combinaison</strong> d'expériences dans le développement, la gestion de projet et la gestion opérationnelle, ainsi que mes compétences techniques et ma passion pour l'innovation, font de moi un candidat idéal pour le poste de Product Owner. Je suis prêt à apporter mon expertise et mon engagement à votre entreprise, convaincu de pouvoir contribuer de manière significative à votre succès à long terme."<br/>
+                                "Avec une expérience variée et enrichissante, 
+                                je propose une perspective solide et une valeur ajoutée à toute équipe ou entreprise. 
+                                Formé en tant que Product Manager, 
+                                je suis efficace dans la collaboration avec des équipes multidisciplinaires. 
+                                En tant que Développeur JavaScript React, 
+                                je me concentre sur la conception d'interfaces utilisateur de qualité et j'ai acquis une expertise en méthodologies Agile et Scrum. 
+                                Mon expérience chez Michelin a renforcé mes compétences en gestion opérationnelle et en qualité. 
+                                Je suis passionné par l'innovation et prêt à contribuer de manière significative en tant que Product Owner."
                             </p>
                         </div>
                         <Info />
@@ -71,9 +76,10 @@ const TabContent = ({ activeTab }) => {
                 <div className="about__qualities-block-description">
                     <p className="about__description">
                         <span className='span__about'>
-                            <strong>Mon objectif</strong> est de devenir un Product Owner accompli et de progresser vers un rôle de Product Manager. Mon parcours et mes formations m'ont apporté des compétences essentielles pour gérer efficacement les produits, en mettant l'accent sur la satisfaction client, l'innovation et les objectifs commerciaux.<br/><br/> 
-                            <strong>Avec une expertise</strong>  en Product Management et en développement JavaScript React, je comprends les besoins des utilisateurs et suis capable de concevoir et de gérer des produits de manière efficace. Ma polyvalence, acquise grâce à mes expériences variées, me permet d'aborder les défis sous différents angles et de collaborer efficacement avec des équipes interdisciplinaires<br/><br/>
-                            <strong>Je suis déterminé</strong> à relever de nouveaux défis et à m'adapter rapidement aux besoins de l'entreprise. Mon engagement est de développer des produits de haute qualité qui dépassent les attentes des utilisateurs tout en atteignant les objectifs fixés. Enfin, je suis un collaborateur efficace, capable de motiver les membres de l'équipe et de construire des relations solides. Je suis convaincu de pouvoir apporter une valeur ajoutée significative à votre entreprise.
+                            "Bénéficiant d'une expérience variée et enrichissante, 
+                            je possède une solide formation en gestion de produits et une expertise en développement JavaScript React. 
+                            Mon parcours chez Michelin a renforcé mes compétences en gestion opérationnelle et en respect des normes de qualité. 
+                            Passionné d'innovation, je suis prêt à mettre à profit mes compétences techniques et mon engagement pour contribuer au succès de votre entreprise en tant que Product Owner."
                         </span>
                     </p>
                 </div>

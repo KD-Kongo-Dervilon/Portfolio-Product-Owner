@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-//import CookieConsent from './CookieConsent';
+import CookieConsent from './CookieConsent';
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 import { ToastContainer, toast } from 'react-toastify';
@@ -124,6 +124,8 @@ const Contact = () => {
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
                         </div>
+
+                        <CookieConsent/>
                         
                         <div className="contact__card">
                             <i className="bx bxl-whatsapp contact__card-icon what"></i>

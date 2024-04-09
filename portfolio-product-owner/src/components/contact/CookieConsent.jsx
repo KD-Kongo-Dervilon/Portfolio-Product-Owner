@@ -55,9 +55,10 @@ const CookieConsent = () => {
                     🍪
                 </div>
                 <div className="cookie-text">
-                    <p>Ce site utilise des cookies pour vous offrir la meilleure expérience possible.
-                        En continuant à utiliser ce site, vous acceptez mon utilisation des cookies conformément à la 
-                        <a className="cookie__back" href="#privacy-policy">Politique de confidentialité</a>.
+                    <p>
+                        Ce portfolio utilise des cookies pour analyser les parties sur lesquelles vous êtes amené à cliquer ou à vous attarder, 
+                        dans le but d'améliorer celui-ci et de proposer un portfolio pertinent aux éventuels recruteurs.
+                        <a className="cookie__back" href="#privacy-policy"> La Politique de confidentialité</a>.
                     </p>
                 </div>
                 <div className="cookie-actions">
@@ -70,14 +71,11 @@ const CookieConsent = () => {
                 <Modal closeModal={closeModal}>
                     {/* Contenu  Politique de confidentialité */}
                     <h2 className="modal__title">Politique de confidentialité</h2>
-                        J'utilise des cookies sur mon site web pour améliorer votre expérience utilisateur, 
-                        comprendre vos préférences et recueillir des informations utiles qui m'aideront à améliorer continuellement mon site. 
-                        Types de cookies que j'utilise : 
-                        Cookies de session : Ces cookies sont temporaires et expireront à la fin de votre session de navigation. 
-                        Ils sont essentiels pour assurer le bon fonctionnement de certaines fonctionnalités de mon site.
-                        Cookies persistants : Ces cookies restent sur votre appareil après la fin de votre session de navigation. 
-                        Ils m'aident à reconnaître votre appareil lorsque vous revenez sur mon site, ce qui me permet de vous offrir une expérience utilisateur plus personnalisée
-                        Lien vers la <a className="cookie__save" href="https://www.tresor.economie.gouv.fr/Institutionnel/politique-de-cookies" target="_blank" rel="noreferrer">Politique de cookies</a> 
+                        Mon portfolio utilise Google Analytics , Google Tag Manager, des cookies pour améliorer l'expérience des visiteurs et présenter un contenu attractif aux recruteurs potentiels.<br/> <br/>
+                        J'analyse les interactions des utilisateurs pour optimiser le portfolio.
+                        À l'avenir, je prévois d'ajouter une section blog pour partager mes expériences et projets.<br/><br/> 
+                        Les types de cookies utilisés incluent les cookies de session et les cookies persistants.<br/><br/>
+                        Lien vers la <a className="cookie__save" href="https://www.tresor.economie.gouv.fr/Institutionnel/politique-de-cookies" target="_blank" rel="noreferrer">La Politique de cookies</a> 
                 </Modal>
             )}
         </div>

@@ -33,9 +33,10 @@ const HomeData = () => {
             </h1>
             <h3 className="home_subtitle"> Product Owner </h3>
             <p className="home_description">
-                "Diplômé en gestion de projet, je suis à la recherche d'une opportunité 
-                qui me permettrait de mettre en pratique mes compétences techniques et ma vision stratégique, 
-                tout en continuant à développer mon expertise dans le domaine de la technologie et de la stratégie de produits."
+                Diplômé en Manager stratégie et développement de projet digital, 
+                je suis passionné par l'alliance entre latechnologie et la stratégie de produits. 
+                Fort d'une expertise technique solide et d'une vision stratégique, 
+                je recherche activement des opportunités dans ce domaine.
             </p>
             {/* Utilisation du composant Button avec des propriétés pour la personnalisation */}
             <Button href="#contact" buttonText="Contact" />

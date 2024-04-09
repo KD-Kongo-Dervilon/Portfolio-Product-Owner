@@ -93,6 +93,27 @@
   }
 }
 
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loader-text {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #7f36d6;
+}
+
+.name-text {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #7f36d6;
+}
+
 /*=============== BASE ===============*/
 * {
 margin: 0;
