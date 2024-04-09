@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Product-Owner/static/css/main.5183de80.css",
-    "main.js": "/Portfolio-Product-Owner/static/js/main.955b6922.js",
+    "main.css": "/Portfolio-Product-Owner/static/css/main.a0bd46fa.css",
+    "main.js": "/Portfolio-Product-Owner/static/js/main.a5f24b43.js",
     "static/media/work10.png": "/Portfolio-Product-Owner/static/media/work10.8da68e84acc1860bbcd9.png",
     "static/media/work4.png": "/Portfolio-Product-Owner/static/media/work4.529d99271b43bd92cedc.png",
     "static/media/work5.png": "/Portfolio-Product-Owner/static/media/work5.6a8260df3036b783d97b.png",
@@ -9,7 +9,7 @@
     "static/media/work2.png": "/Portfolio-Product-Owner/static/media/work2.6310c4e0d80018c2b6ea.png",
     "static/media/work3.png": "/Portfolio-Product-Owner/static/media/work3.119802c8e89a2b2a8759.png",
     "static/media/work6.png": "/Portfolio-Product-Owner/static/media/work6.17017dc6017c72de479d.png",
-    "static/media/CV-product_owner-Mbissi-dervilon.pdf": "/Portfolio-Product-Owner/static/media/CV-product_owner-Mbissi-dervilon.b8151d76c43a27d546f9.pdf",
+    "static/media/CV-product_owner-Mbissi-dervilon.pdf": "/Portfolio-Product-Owner/static/media/CV-product_owner-Mbissi-dervilon.2eb40c271b1316a90163.pdf",
     "static/media/work11.png": "/Portfolio-Product-Owner/static/media/work11.0f3e2ff498f9d9e54718.png",
     "static/media/testimonial10.png": "/Portfolio-Product-Owner/static/media/testimonial10.1dbf553e0a82d03a7ce2.png",
     "static/media/testimonial1.png": "/Portfolio-Product-Owner/static/media/testimonial1.3f889d0af5f26871fbcc.png",
@@ -23,11 +23,11 @@
     "static/media/testimonial4.png": "/Portfolio-Product-Owner/static/media/testimonial4.ba422ca13bb76ae93687.png",
     "static/media/LogoFooter.svg": "/Portfolio-Product-Owner/static/media/LogoFooter.80dc1b1c89b15a47cfb2ccb4eb6da67a.svg",
     "index.html": "/Portfolio-Product-Owner/index.html",
-    "main.5183de80.css.map": "/Portfolio-Product-Owner/static/css/main.5183de80.css.map",
-    "main.955b6922.js.map": "/Portfolio-Product-Owner/static/js/main.955b6922.js.map"
+    "main.a0bd46fa.css.map": "/Portfolio-Product-Owner/static/css/main.a0bd46fa.css.map",
+    "main.a5f24b43.js.map": "/Portfolio-Product-Owner/static/js/main.a5f24b43.js.map"
   },
   "entrypoints": [
-    "static/css/main.5183de80.css",
-    "static/js/main.955b6922.js"
+    "static/css/main.a0bd46fa.css",
+    "static/js/main.a5f24b43.js"
   ]
 }
