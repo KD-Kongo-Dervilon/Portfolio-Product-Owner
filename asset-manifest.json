@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio-Product-Owner/static/css/main.a0bd46fa.css",
-    "main.js": "/Portfolio-Product-Owner/static/js/main.a5f24b43.js",
+    "main.css": "/Portfolio-Product-Owner/static/css/main.8c0728dd.css",
+    "main.js": "/Portfolio-Product-Owner/static/js/main.c82b28e8.js",
     "static/media/work10.png": "/Portfolio-Product-Owner/static/media/work10.8da68e84acc1860bbcd9.png",
+    "static/media/home-img.png": "/Portfolio-Product-Owner/static/media/home-img.47df5862a96bbd323aa4.png",
     "static/media/work4.png": "/Portfolio-Product-Owner/static/media/work4.529d99271b43bd92cedc.png",
     "static/media/work5.png": "/Portfolio-Product-Owner/static/media/work5.6a8260df3036b783d97b.png",
     "static/media/work7.png": "/Portfolio-Product-Owner/static/media/work7.ea38687c1c14675817f0.png",
     "static/media/work2.png": "/Portfolio-Product-Owner/static/media/work2.6310c4e0d80018c2b6ea.png",
     "static/media/work3.png": "/Portfolio-Product-Owner/static/media/work3.119802c8e89a2b2a8759.png",
     "static/media/work6.png": "/Portfolio-Product-Owner/static/media/work6.17017dc6017c72de479d.png",
-    "static/media/CV-product_owner-Mbissi-dervilon.pdf": "/Portfolio-Product-Owner/static/media/CV-product_owner-Mbissi-dervilon.2eb40c271b1316a90163.pdf",
+    "static/media/CV-product_owner-Mbissi-dervilon.pdf": "/Portfolio-Product-Owner/static/media/CV-product_owner-Mbissi-dervilon.24e30f86eaee2decc4db.pdf",
     "static/media/work11.png": "/Portfolio-Product-Owner/static/media/work11.0f3e2ff498f9d9e54718.png",
     "static/media/testimonial10.png": "/Portfolio-Product-Owner/static/media/testimonial10.1dbf553e0a82d03a7ce2.png",
     "static/media/testimonial1.png": "/Portfolio-Product-Owner/static/media/testimonial1.3f889d0af5f26871fbcc.png",
@@ -23,11 +24,11 @@
     "static/media/testimonial4.png": "/Portfolio-Product-Owner/static/media/testimonial4.ba422ca13bb76ae93687.png",
     "static/media/LogoFooter.svg": "/Portfolio-Product-Owner/static/media/LogoFooter.80dc1b1c89b15a47cfb2ccb4eb6da67a.svg",
     "index.html": "/Portfolio-Product-Owner/index.html",
-    "main.a0bd46fa.css.map": "/Portfolio-Product-Owner/static/css/main.a0bd46fa.css.map",
-    "main.a5f24b43.js.map": "/Portfolio-Product-Owner/static/js/main.a5f24b43.js.map"
+    "main.8c0728dd.css.map": "/Portfolio-Product-Owner/static/css/main.8c0728dd.css.map",
+    "main.c82b28e8.js.map": "/Portfolio-Product-Owner/static/js/main.c82b28e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0bd46fa.css",
-    "static/js/main.a5f24b43.js"
+    "static/css/main.8c0728dd.css",
+    "static/js/main.c82b28e8.js"
   ]
 }
