@@ -81,9 +81,15 @@ const TabContent = ({ activeTab }) => {
                             Je suis ouvert aux idées et aux feedbacks, favorisant ainsi un environnement collaboratif où chacun peut s'exprimer librement. 
                             Ma réactivité et ma capacité à prendre des décisions rapides sont des atouts que je mets au service de la gestion de projets dynamiques axés sur l'innovation.<br/><br/>
                             <strong>Lien vers Mon profil assessfirst:</strong><br/><br/>
-                                <a href="https://app.assessfirst.com/_/profile/7ow8gghg-dervilon-mbissi-kongo?lang=fr-FR" target="_blank" rel="noopener noreferrer">
-                                    https://app.assessfirst.com/_/profile/7ow8gghg-dervilon-mbissi-kongo?lang=fr-FR
+                            <div className='center__about'>
+                                <a 
+                                    href="https://app.assessfirst.com/_/profile/7ow8gghg-dervilon-mbissi-kongo?lang=fr-FR" 
+                                    target="_blank" 
+                                    className="about-link"
+                                    rel="noopener noreferrer">
+                                        https://app.assessfirst.com/_/profile/7ow8gghg-dervilon-mbissi-kongo?lang=fr-FR
                                 </a>
+                            </div>
                         </span>
                     </p>
                 </div>

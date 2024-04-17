@@ -213,6 +213,13 @@
         padding: 0rem 2rem 0rem;
     }
 
+    .center__about {
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    
 }
 
 /* For small devices */
@@ -227,7 +234,6 @@
     }
 
 }
-
 
 .about__content-container {
     display: flex;
@@ -303,3 +309,17 @@
     }
 }
 
+/* styles.css */
+
+.about-link {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    color:#fff;
+}
