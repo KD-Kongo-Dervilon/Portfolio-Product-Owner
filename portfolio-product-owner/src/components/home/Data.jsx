@@ -34,7 +34,7 @@ const HomeData = () => {
             <h3 className="home_subtitle"> Product Owner </h3>
             <p className="home_description">
                 Diplômé en Manager stratégie et développement de projet digital, 
-                je suis passionné par l'alliance entre latechnologie et la stratégie de produits. 
+                je suis passionné par l'alliance entre la technologie et la stratégie de produits. 
                 Fort d'une expertise technique solide et d'une vision stratégique, 
                 je recherche activement des opportunités dans ce domaine.
             </p>

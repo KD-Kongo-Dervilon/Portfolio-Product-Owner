@@ -34,7 +34,7 @@ const About = () => {
                 <div className="about__tabs">
                     {['description', 'info', 'qualités'].map(tab => (
                         <button key={tab} className={`about__tab ${activeTab === tab && 'active'}`} onClick={() => handleTabClick(tab)}>
-                            {tab === 'info' ? 'Expériences' : tab === 'qualités' ? 'Qualités & Défauts' : 'Information'}
+                            {tab === 'info' ? 'Expériences' : tab === 'qualités' ? 'Qualités' : 'À propos de moi'}
                         </button>
                     ))}
                 </div>
@@ -64,7 +64,7 @@ const TabContent = ({ activeTab }) => {
                                 En tant que Développeur JavaScript React, 
                                 je me concentre sur la conception d'interfaces utilisateur de qualité et j'ai acquis une expertise en méthodologies Agile et Scrum. 
                                 Mon expérience chez Michelin a renforcé mes compétences en gestion opérationnelle et en qualité. 
-                                Je suis passionné par l'innovation et prêt à contribuer de manière significative en tant que Product Owner."
+                                Je suis prêt à contribuer de manière significative en tant que Product Manager ou Owner."
                             </p>
                         </div>
                         <Info />
@@ -76,10 +76,14 @@ const TabContent = ({ activeTab }) => {
                 <div className="about__qualities-block-description">
                     <p className="about__description">
                         <span className='span__about'>
-                            "Bénéficiant d'une expérience variée et enrichissante, 
-                            je possède une solide formation en gestion de produits et une expertise en développement JavaScript React. 
-                            Mon parcours chez Michelin a renforcé mes compétences en gestion opérationnelle et en respect des normes de qualité. 
-                            Passionné d'innovation, je suis prêt à mettre à profit mes compétences techniques et mon engagement pour contribuer au succès de votre entreprise en tant que Product Owner."
+                            Je suis passionné par l'innovation et la création de produits digitaux impactants. 
+                            Ma rigueur et ma précision me permettent d'éviter les erreurs tout en maintenant un haut niveau de qualité dans mes projets. 
+                            Je suis ouvert aux idées et aux feedbacks, favorisant ainsi un environnement collaboratif où chacun peut s'exprimer librement. 
+                            Ma réactivité et ma capacité à prendre des décisions rapides sont des atouts que je mets au service de la gestion de projets dynamiques axés sur l'innovation.<br/><br/>
+                            <strong>Lien vers Mon profil assessfirst:</strong><br/><br/>
+                                <a href="https://app.assessfirst.com/_/profile/7ow8gghg-dervilon-mbissi-kongo?lang=fr-FR" target="_blank" rel="noopener noreferrer">
+                                    https://app.assessfirst.com/_/profile/7ow8gghg-dervilon-mbissi-kongo?lang=fr-FR
+                                </a>
                         </span>
                     </p>
                 </div>
@@ -87,38 +91,41 @@ const TabContent = ({ activeTab }) => {
 
             {activeTab === 'qualités' && (
                 <div className="about__qualities">
-                    <div className="about__qualities-block appart">
-                        <h3>Qualités</h3>
+                    <div className="about__qualities-block">
+                        <h3>Mes points forts</h3>
                         <span>
-                            <strong>Adaptabilité :</strong> 
-                            Mon parcours varié, allant du développement à la gestion de projet, démontre ma capacité à m'adapter à diverses situations.<br/>
+                            <strong>Spontanéité dans mon discours :</strong> Me montre franc et va à l'essentiel.
                         </span>
                         <span>
-                            <strong>Réactivité :</strong> 
-                            Mon expérience en tant qu'opérateur sur machine chez Michelin témoigne de ma promptitude à réagir face aux défis, notamment en cas de panne.<br/>
-                        </span>
-                        <span>
-                            <strong>Persevérance :</strong> 
-                            Durant ma formation en développement JavaScript React, ma persévérance m'a motivé à résoudre des problèmes de code complexes.<br/>
+                            <strong>Maîtrise de mes relations :</strong> Ne me disperse pas, garde une retenue.
                         </span>
                     </div>
                     <div className="about__qualities-block">
-                        <h3>Défauts</h3>
+                        <h3>Ma manière de travailler</h3>
                         <span>
-                            <strong>Méticuleux :</strong> 
-                            Ma méticulosité se traduit par une grande attention aux détails et une recherche constante de la perfection dans mon travail.
-                            Cela  me permet de livrer des résultats de haute qualité et de m'assurer que chaque tâche est réalisée avec précision et efficacité.
-                            .<br/>
+                            <strong>Reste dans le cadre :</strong> me centre sur mes attributions.
                         </span>
                         <span>
-                            <strong>Introverti :</strong> 
-                            Mon caractère introverti me permet de développer une profonde compréhension des dynamiques d'équipe et des besoins individuels.
-                            En prenant le temps d'écouter et d'observer, je suis capable de proposer des solutions adaptées qui répondent aux besoins de chacun. 
+                            <strong>Capacité à gérer plusieurs projets :</strong> Fait face à plusieurs projets de front.
+                        </span>
+                        <span>
+                            <strong>Force de proposition :</strong> Produit facilement de nouvelles idées.
+                        </span>
+                    </div>
+                    <div className="about__qualities-block">
+                        <h3>Ma gestion des émotions</h3>
+                        <span>
+                            <strong>Réactivité :</strong> Possède une énergie forte et un sens de l'urgence.
+                        </span>
+                        <span>
+                            <strong>Discernement :</strong> Juge sur la base des faits.
+                        </span>
+                        <span>
+                            <strong>Expression des ressentis :</strong> Communique facilement avec les autres.
                         </span>
                     </div>
                 </div>
-            )}
-
+                )}
             {shouldShowDownloadButton && <DownloadButton />}
         </div>
     );

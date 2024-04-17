@@ -70,7 +70,7 @@
 
 /* Home Image */
 .home_img {
-    background: url(../../assets/LogoFooter.svg);
+    background: url(../../assets/home-img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

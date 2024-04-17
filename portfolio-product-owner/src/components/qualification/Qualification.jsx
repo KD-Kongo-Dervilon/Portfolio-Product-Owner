@@ -29,6 +29,27 @@ const Qualification = () => {
 
                 <div className="qualification__sections">
                     <div className={toggleState === 1 ? "qualification__content qualification__content-active" : "qualification__content " }>
+
+                    <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <div className="qualification__line"></div>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title"> Visa Anglais professionelles </h3>
+                                <span className="qualification__subtitle">
+                                    Eurinfac ( En cours )
+                                </span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2024 - 2024
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title"> Product Manager </h3>
@@ -108,6 +129,27 @@ const Qualification = () => {
 
                     <div className={
                         toggleState === 2 ? "qualification__content qualification__content-active": "qualification__content"}>
+                        
+                        <div className="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <div className="qualification__line"></div>
+                            </div>
+
+                            <div>
+                                <h3 className="qualification__title"> Skills4all  </h3>
+                                <span className="qualification__subtitle">
+                                    Scrum Product Owner (en cours)
+                                </span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calendar-alt"></i>
+                                    2024 - 2024
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title"> Michelin </h3>
