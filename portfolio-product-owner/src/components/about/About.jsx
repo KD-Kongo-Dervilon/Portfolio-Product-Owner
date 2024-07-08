@@ -100,34 +100,34 @@ const TabContent = ({ activeTab }) => {
                     <div className="about__qualities-block">
                         <h3>Mes points forts</h3>
                         <span>
-                            <strong>Spontanéité dans mon discours :</strong> Me montre franc et va à l'essentiel.
+                            <strong>Spontanéité dans mon discours :</strong> Je me montre franc et va à l'essentiel.
                         </span>
                         <span>
-                            <strong>Maîtrise de mes relations :</strong> Ne me disperse pas, garde une retenue.
+                            <strong>Maîtrise de mes relations :</strong> Je ne me disperse pas, garde une retenue.
                         </span>
                     </div>
                     <div className="about__qualities-block">
                         <h3>Ma manière de travailler</h3>
                         <span>
-                            <strong>Reste dans le cadre :</strong> me centre sur mes attributions.
+                            <strong>Reste dans le cadre :</strong> Je me centre sur mes attributions.
                         </span>
                         <span>
-                            <strong>Capacité à gérer plusieurs projets :</strong> Fait face à plusieurs projets de front.
+                            <strong>Capacité à gérer plusieurs projets :</strong> Je sais faire face à plusieurs projets de front.
                         </span>
                         <span>
-                            <strong>Force de proposition :</strong> Produit facilement de nouvelles idées.
+                            <strong>Force de proposition :</strong> Je produit facilement de nouvelles idées.
                         </span>
                     </div>
                     <div className="about__qualities-block">
                         <h3>Ma gestion des émotions</h3>
                         <span>
-                            <strong>Réactivité :</strong> Possède une énergie forte et un sens de l'urgence.
+                            <strong>Réactivité :</strong> Je possède une énergie forte et un sens de l'urgence.
                         </span>
                         <span>
-                            <strong>Discernement :</strong> Juge sur la base des faits.
+                            <strong>Discernement :</strong> Je juge sur la base des faits.
                         </span>
                         <span>
-                            <strong>Expression des ressentis :</strong> Communique facilement avec les autres.
+                            <strong>Expression des ressentis :</strong> Je sais communiquer facilement avec les autres.
                         </span>
                     </div>
                 </div>

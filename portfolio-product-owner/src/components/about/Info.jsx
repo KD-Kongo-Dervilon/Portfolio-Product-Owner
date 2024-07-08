@@ -13,6 +13,7 @@ const InfoItem = React.memo(({ iconClass, title, subtitle }) => (
 const Info = () => {
     return (
         <div className="about__info grid">
+            {/* Utilisation de fragments pour éviter les divs inutiles */}
             <InfoItem iconClass="bx-award" title="Expérience" subtitle="Diverses et variées" />
             <InfoItem iconClass="bx-briefcase-alt" title="Compléter" subtitle="12 - Projets" />
             <InfoItem iconClass="bx-user" title="Disponibilité" subtitle="Tout de suite" />

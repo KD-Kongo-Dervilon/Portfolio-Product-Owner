@@ -41,7 +41,7 @@ const Qualification = () => {
                             <div>
                                 <h3 className="qualification__title"> Visa Anglais professionelles </h3>
                                 <span className="qualification__subtitle">
-                                    Eurinfac ( En cours )
+                                    Eurinfa (Niveau B2/C1)
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
@@ -141,7 +141,7 @@ const Qualification = () => {
                             <div>
                                 <h3 className="qualification__title"> Skills4all  </h3>
                                 <span className="qualification__subtitle">
-                                    Scrum Product Owner (en cours)
+                                    Scrum Product Owner (Obtenue )
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>

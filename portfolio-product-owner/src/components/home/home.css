@@ -33,6 +33,7 @@
 .home_title {
     font-size: var(--middle-font-size);
     margin-bottom: var(--mb-0-25);
+    color :var(--link-blue);
 }
 
 /* Home Subtitle */
@@ -42,6 +43,7 @@
     text-align: center;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
+    color :var(--link-blue);
 }
 
 .home_subtitle::before,
@@ -145,7 +147,6 @@
 /* Home Scroll Mouse */
 .home_scroll-mouse {
     fill: var(--link-blue);
-    filter: drop-shadow(5px 5px 2px #ffffff);
 }
 
 /* Home Scroll Name */
@@ -258,7 +259,7 @@
 .scroll-indicator {
     width: 0;
     height: 100%;
-    background-color: var(--link-blue);
+    background-color: red;
     transition: width 0.3s ease;
 }
 
@@ -280,7 +281,7 @@
     .scroll-indicator {
         width: calc(100% - 20px); /* Ajustez selon vos préférences */
         height: 100%;
-        background-color: var(--link-blue);
+        background-color: red;
         transition: width 0.3s ease;
     }
     

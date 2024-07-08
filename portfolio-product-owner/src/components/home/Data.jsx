@@ -29,7 +29,7 @@ const HomeData = () => {
     return (
         <div className="home_data">
             <h1 className="home_title">
-                M'Bissi Kongo Dervilon
+                Kongo Dervilon
             </h1>
             <h3 className="home_subtitle"> Product Owner </h3>
             <p className="home_description">
