@@ -76,10 +76,12 @@ const TabContent = ({ activeTab }) => {
                 <div className="about__qualities-block-description">
                     <p className="about__description">
                         <span className='span__about'>
-                            Je suis passionné par l'innovation et la création de produits digitaux impactants. 
-                            Ma rigueur et ma précision me permettent d'éviter les erreurs tout en maintenant un haut niveau de qualité dans mes projets. 
-                            Je suis ouvert aux idées et aux feedbacks, favorisant ainsi un environnement collaboratif où chacun peut s'exprimer librement. 
-                            Ma réactivité et ma capacité à prendre des décisions rapides sont des atouts que je mets au service de la gestion de projets dynamiques axés sur l'innovation.<br/><br/>
+                            Je combine une expertise technique en HTML, CSS, JavaScript, React.js, 
+                            et Python avec une certification Scrum Product Owner. 
+                            Mon parcours m’a permis de mener des projets complexes en environnement agile, 
+                            en mettant l’accent sur la qualité et la satisfaction client. 
+                            Rigoureux et adaptable, je suis passionné par l’innovation digitale et la conduite du changement, toujours à la recherche de nouvelles opportunités pour transformer des idées en produits performants.
+                        <br/><br/>
                             <strong>Lien vers Mon profil assessfirst:</strong><br/><br/>
                             <div className='center__about'>
                                 <a 

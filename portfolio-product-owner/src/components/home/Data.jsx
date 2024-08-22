@@ -33,10 +33,9 @@ const HomeData = () => {
             </h1>
             <h3 className="home_subtitle"> Product Owner </h3>
             <p className="home_description">
-                Diplômé en Manager stratégie et développement de projet digital, 
-                je suis passionné par l'alliance entre la technologie et la stratégie de produits. 
-                Fort d'une expertise technique solide et d'une vision stratégique, 
-                je recherche activement des opportunités dans ce domaine.
+                Diplômé en gestion de projet et développement web (BAC+5), 
+                je suis certifié Scrum Product Owner avec une solide expérience en développement web (HTML, CSS, JavaScript, React.js, Python) 
+                et en gestion agile (Scrum, Kanban, Lean). Adaptable, rigoureux et réactif, je m’engage à livrer des produits de qualité répondant aux besoins des clients.
             </p>
             {/* Utilisation du composant Button avec des propriétés pour la personnalisation */}
             <Button href="#contact" buttonText="Contact" />
