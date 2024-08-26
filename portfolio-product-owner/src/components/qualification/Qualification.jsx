@@ -152,9 +152,9 @@ const Qualification = () => {
 
                         <div className="qualification__data">
                             <div>
-                                <h3 className="qualification__title"> Michelin </h3>
+                                <h3 className="qualification__title">  Resto Du Coeur </h3>
                                 <span className="qualification__subtitle">
-                                    Opérateur sur machine
+                                    Cariste, chargement/ déchargement de colis
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>
@@ -177,9 +177,9 @@ const Qualification = () => {
                             </div>
 
                             <div>
-                                <h3 className="qualification__title"> Resto Du Coeur  </h3>
+                                <h3 className="qualification__title"> Michelin </h3>
                                 <span className="qualification__subtitle">
-                                    Cariste, chargement/ déchargement de colis
+                                    Opérateur sur machine
                                 </span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calendar-alt"></i>

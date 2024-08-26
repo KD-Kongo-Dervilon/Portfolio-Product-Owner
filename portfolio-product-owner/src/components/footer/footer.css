@@ -33,9 +33,9 @@
     color: var(--link-blue);
 }
 
-.footer__copy {
+.footer__copy,.footer_date {
     display: block;
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
     text-align: center;
     font-size: var(--smaller-font-size);
 }

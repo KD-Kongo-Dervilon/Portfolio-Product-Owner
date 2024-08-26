@@ -271,3 +271,14 @@
     button:hover {
         opacity: 0.8;
     }
+
+/*=============== Indicator visual ===============*/
+.contact__form-div.invalide .contact__form-input {
+    border: 2px solid red;
+    background-color: #ffe6e6;
+}
+
+.contact__form-div.valide .contact__form-input {
+    border: 2px solid green;
+    background-color: #e6ffe6;
+}

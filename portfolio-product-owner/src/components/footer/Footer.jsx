@@ -3,6 +3,9 @@ import "./footer.css";
 import LogoFooter from "../../assets/LogoFooter.svg";
 
 const Footer = () => {
+    // L'année actuelle dynamiquement
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="footer">
             <div className="footer__container container">
@@ -28,7 +31,8 @@ const Footer = () => {
                 </ul>
 
                 {/* Utilisation de &copy; pour le symbole de copyright */}
-                <span className="footer__copy">&copy; KD Kongo Dervilon réservé</span>
+                <span className="footer__copy">  KD Kongo Dervilon réservé  </span>
+                <span className="footer_date"> &copy; {currentYear} </span>
             </div>
         </footer>
     );

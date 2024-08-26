@@ -8,6 +8,11 @@ import './contact.css';
 const Contact = () => {
     const formRef = useRef();
     const [isSubmitting, setSubmitting] = useState(false);
+    const [formValidity, setFormValidity] = useState({
+        name: null,
+        email: null,
+        project: null,
+    });
 
     const notify = (messageType, message) => {
         if (messageType === 'success') {
@@ -15,6 +20,29 @@ const Contact = () => {
         } else if (messageType === 'error') {
             toast.error(message);
         }
+    };
+
+    const validateField = (name, value) => {
+        switch (name) {
+            case 'email':
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(value);
+            case 'name':
+            case 'project':
+                return value.length >= 3; // Assuming 3 is the minimum length
+            default:
+                return false;
+        }
+    };
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        const isValid = validateField(name, value);
+
+        setFormValidity(prevState => ({
+            ...prevState,
+            [name]: isValid,
+        }));
     };
 
     const sendEmail = async (e) => {
@@ -25,19 +53,17 @@ const Contact = () => {
         }
 
         const form = formRef.current;
-
         const name = form.elements.name.value;
         const email = form.elements.email.value;
         const project = form.elements.project.value;
 
-        if (!name || !email || !project) {
-            notify('error', 'Veuillez remplir tous les champs du formulaire');
-            return;
-        }
-
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            notify('error', 'Veuillez saisir une adresse e-mail valide');
+        if (!name || !email || !project || !formValidity.name || !formValidity.email || !formValidity.project) {
+            notify('error', 'Veuillez remplir tous les champs du formulaire correctement');
+            setFormValidity({
+                name: name.length >= 3,
+                email: validateField('email', email),
+                project: project.length >= 10,
+            });
             return;
         }
 
@@ -59,6 +85,13 @@ const Contact = () => {
             document.cookie = `userData=${name},${email}; expires=${expirationDate.toUTCString()}; path=/`;
 
             notify('success', 'Message envoyé');
+
+            // Reset form validity
+            setFormValidity({
+                name: null,
+                email: null,
+                project: null,
+            });
         } catch (error) {
             console.error(error.text);
             notify('error', 'Une erreur s\'est produite, veuillez réessayer');
@@ -76,6 +109,7 @@ const Contact = () => {
                     <h3 className="contact__title">Me parler</h3>
 
                     <div className="contact__info">
+                        {/* Les cartes d'informations */}
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
                             <h3 className="contact__card-title">Email</h3>
@@ -114,7 +148,7 @@ const Contact = () => {
                     <h3 className="contact__title">Décrivez votre projet</h3>
 
                     <form ref={formRef} className="contact__form" onSubmit={sendEmail}>
-                        <div className="contact__form-div">
+                        <div className={`contact__form-div ${formValidity.name === false ? 'invalide' : ''} ${formValidity.name ? 'valide' : ''}`}>
                             <label htmlFor="name" className="contact__form-tag">
                                 Nom
                             </label>
@@ -123,12 +157,14 @@ const Contact = () => {
                                 id="name"
                                 name="name"
                                 required
+                                minLength="3"
                                 className="contact__form-input"
                                 placeholder="Votre nom"
+                                onChange={handleInputChange}
                             />
                         </div>
 
-                        <div className="contact__form-div">
+                        <div className={`contact__form-div ${formValidity.email === false ? 'invalide' : ''} ${formValidity.email ? 'valide' : ''}`}>
                             <label htmlFor="email" className="contact__form-tag">
                                 Email
                             </label>
@@ -139,10 +175,11 @@ const Contact = () => {
                                 required
                                 className="contact__form-input"
                                 placeholder="Votre email"
+                                onChange={handleInputChange}
                             />
                         </div>
 
-                        <div className="contact__form-div contact__form-area">
+                        <div className={`contact__form-div contact__form-area ${formValidity.project === false ? 'invalide' : ''} ${formValidity.project ? 'valide' : ''}`}>
                             <label htmlFor="project" className="contact__form-tag">
                                 Projet
                             </label>
@@ -150,10 +187,12 @@ const Contact = () => {
                                 id="project"
                                 name="project"
                                 required
+                                minLength="10"
                                 cols="30"
                                 rows="10"
                                 className="contact__form-input"
                                 placeholder="Décrivez votre projet"
+                                onChange={handleInputChange}
                             ></textarea>
                         </div>
 
